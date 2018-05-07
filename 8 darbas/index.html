@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body,  h1{
+        margin: 0px auto;
+        
+    }
+    header{
+        background-image: url(IMG/1.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 80%;
+        height: 100%;
+        filter: grayscale(50%);
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    header .text-box-title{
+        font-size: 38px;
+        color: white;
+        text-align: center;
+        
+    }
+    .header-button{
+        background: black;
+        padding: 20px 10px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        position: static;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px; 
+       
+    }
+    .header-button:hover{
+        background: silver;
+        color: black;
+    }
+    .text-box-bottom{
+        text-align: center;
+        padding: 15px 20px;
+        background: black;
+        width: 200px;
+        margin-left: 10px;
+        margin-top: 50px;
+        font-size: 15px;
+        
+    }
+    .text-box{
+        margin-bottom:10px;
+    }
+    nav{
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        color: white;
+        background-color: rgb(0, 0, 0, 0.7);
+        
+        z-index: 1;
+    }
+    nav:hover {
+        background-color:  black;
+        color: white;
+        }
+    nav a:hover {
+        background: silver;
+        color: white;
+        }
+    nav a {
+        
+        float: left;
+        padding: 15px 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .menu{
+        background: black;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .about{
+        background-color: #8b5f5b;
+    }
+    .contact{
+        background-color: #6c7a81;
+    }
+    footer{
+        background-color: black;
+        color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .space_bottom{
+            display: none;
+        }
+        nav{
+            display: none;
+        }
+    }
+
+</style>
+<head>
+<title>8 uzduotis</title>
+</head>
+<body>
+    <container>
+        <header id="home">
+            <div class="text-box">
+                <div class="text-box-title">
+                    <h1>THIN <br> CRUST PIZZA</h1>
+                    <a href="#menu" class="header-button">let me see the menu</a>
+                </div>
+                <div class="text-box-bottom">
+                    open from 10am to 12PM
+                </div>
+            </div>
+        </header>
+        
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jane">Jane & John</a>
+            <a href="#wedding">Wedding</a>
+            <a href="#rsvp">RSVP</a>
+        </nav>
+        
+        
+    <section id="menu" class="menu">
+        <h1>THE MENU</h1>
+        
+        <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+    </section>
+        
+    <section id="about" class="about">
+        about
+    </section>  
+        
+    <section id="map" class="map">
+        map
+    </section>     
+    <section id="contact" class="contact">
+        contact
+    </section> 
+        
+    <footer>
+        Powered by w3.css
+    </footer>    
+    </container>
+</body>
+</html>
