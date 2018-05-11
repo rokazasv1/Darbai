@@ -1,0 +1,19 @@
+body {
+  font-family: "Georgia Regular", Times, serif;
+  margin: auto;
+  width: 1000px;
+  margin-top: 2%;
+  background: #282828; }
+
+.top-nav {
+  height: 60px;
+  background: #2e2e2e;
+  padding-left: 20px; }
+
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px; }
+
+nav {
+  padding-top: 20px; }

@@ -1,0 +1,35 @@
+$font-family-display: "Georgia Regular", Times, serif;
+$font-margin: auto;
+$font-width: 1000px;
+$font-margin-top: 2%;
+$font-background: #282828;
+//top nav style
+$top-nav-height: 60px;
+$top-nav-background: #2e2e2e;
+$top-nav-decorat: none;
+$top-nav-color:white;
+$top-nav-size:12px;
+$nav-top-padding-left:20px;
+$nav-top-padding: 20px;
+
+body{
+    font-family: $font-family-display;
+    margin: $font-margin;
+    width: $font-width;
+    margin-top: $font-margin-top;
+    background: $font-background;
+}
+.top-nav{
+    height:$top-nav-height;
+    background: $top-nav-background;
+    padding-left: $nav-top-padding-left;
+    
+}
+.top-nav a{
+    text-decoration: $top-nav-decorat;
+    color: $top-nav-color;
+    font-size: $top-nav-size; 
+}
+nav{
+    padding-top:$nav-top-padding;
+}
