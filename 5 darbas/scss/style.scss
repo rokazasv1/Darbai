@@ -1,35 +1,134 @@
-$font-family-display: "Georgia Regular", Times, serif;
-$font-margin: auto;
-$font-width: 1000px;
-$font-margin-top: 2%;
-$font-background: #282828;
+$font-family-display: "Georgia", Times, serif;
+$body-margin: auto;
+$body-width: 1000px;
+$body-margin-top: 2%;
+$body-background: #282828;
+$padding-left:20px;
+$padding-right:20px;
+$float-r: right;
+$float-l: left;
+$display-bl: block;
+$none:none;
+$padding-zero:0;
+$nav_textdecorat: none;
+$cont-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.4);
+
 //top nav style
 $top-nav-height: 60px;
 $top-nav-background: #2e2e2e;
-$top-nav-decorat: none;
 $top-nav-color:white;
 $top-nav-size:12px;
-$nav-top-padding-left:20px;
 $nav-top-padding: 20px;
+$nav-top-padding-left:2px;
+$nav-top-padding-top:23px;
+
+//top nav social
+$nav-top-social-margin-top: 14px;
+$nav-top-social-icon-spacing-right: 7px;
+$social-icon-height:32px;
+$social-icon-width:32px;
+
+//toggle btn
+$clear-both: both;
+$toggle-btn-margin-top: 10px;
+$toogle-btn-width:31px;
+$toogle-btn-height:31px;
+
+//main-nav
+$main-nav-height:76px;
+$main-nav-background:white;
+$main-nav-color: #2e2e2e;
+$main-nav-size:14px;
+$main-nav-p-left:20px;
+$main-nav-p-bottom:18px;
+$main-nav-bot-bord:5px solid #0099ff;
+
+//main-nav-bottom-line
+$main-nav-bottom-line-padding-left:20px;
+$main-nav-bottom-line-padding-top:35.5px;
+$main-nav-bottom-line-heigt:5px;
+$main-nav-bottom-line-color:#f1f1f1;
 
 body{
     font-family: $font-family-display;
-    margin: $font-margin;
-    width: $font-width;
-    margin-top: $font-margin-top;
-    background: $font-background;
+    margin: $body-margin;
+    width: $body-width;
+    margin-top: $body-margin-top;
+    background: $body-background;
 }
-.top-nav{
+h1{
+    margin: 0 auto;
+}
+.container{
+    box-shadow: $cont-box-shadow; 
+}
+.container .top-nav{
     height:$top-nav-height;
     background: $top-nav-background;
-    padding-left: $nav-top-padding-left;
+    padding-left: $padding-left;
+            & ul{
+                list-style: $none;
+                padding: $padding-zero;
+                & li{
+                    float: $float-l;                  
+                        & a{
+                            text-decoration: $nav_textdecorat;
+                            color: $top-nav-color;
+                            font-size: $top-nav-size; 
+                            display: $display-bl;
+                            padding-left:$nav-top-padding-left;
+                            padding-top: $nav-top-padding-top;
+                        }
+                }       
+            }
+}
+
+.container .top-nav .social{
+    float: $float-r;
+    margin-top: $nav-top-social-margin-top;
+    padding-right: $padding-right;
     
+    & img{
+        margin-right: $nav-top-social-icon-spacing-right;
+        height: $social-icon-height;
+        width: $social-icon-width;
+    }
 }
-.top-nav a{
-    text-decoration: $top-nav-decorat;
-    color: $top-nav-color;
-    font-size: $top-nav-size; 
+.container .toogle-btn{
+    clear: $clear-both;
+    padding-top: $toggle-btn-margin-top;
+    float:$float-r;
+    padding-right: $padding-right;
+        & img{
+            width:$toogle-btn-width;
+            height:$toogle-btn-height;
+        }
 }
-nav{
-    padding-top:$nav-top-padding;
+.container .main-nav{
+    background: $main-nav-background;  
+            & ul{
+                clear: $clear-both;
+                list-style: $none;
+                padding: $padding-zero;
+                & li{
+                    float: $float-l;                  
+                        & a{
+                            text-decoration: $nav_textdecorat;
+                            color: $main-nav-color;
+                            font-size: $main-nav-size; 
+                            margin-left:$main-nav-p-left; 
+                                &:hover{
+                                    padding-bottom: $main-nav-p-bottom;
+                                    border-bottom: $main-nav-bot-bord;
+                                }
+                        }
+                }       
+            }
+}
+.main-nav-bottom-line{
+
+    height: $main-nav-bottom-line-heigt; 
+    background-color: $main-nav-bottom-line-color; 
+    margin-left: $main-nav-bottom-line-padding-left;
+    margin-top: $main-nav-bottom-line-padding-top;
 }

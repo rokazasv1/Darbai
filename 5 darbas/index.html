@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <style>
-    .social{
-        float: right;
-        padding-top: 14px;
-    }
+
 
 </style>
 <head>
     <script>
+/* START top nav social button*/        
 function link_hover(element) {
   element.setAttribute('src', 'css/icon/linkeind-active.png');
 }
@@ -44,34 +42,61 @@ function rss_hover(element) {
 function rss_unhover(element) {
   element.setAttribute('src', 'css/icon/rss.png');
 }
+/*END top nav social button*/      
         
     </script>
 
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/icons.css">
+    <link rel="stylesheet" href="../1/css/style.css">
+    <link rel="stylesheet" href="../1/css/icons.css">
     <title>5 uzduotis</title>
 </head>
 <body>
 <div class="container">
     <div class="top-nav">
+            <div class="social">
+                <a href="#"><img border="0" id="linkedin" alt="linkedin" src="css/icon/linkeind.png" onmouseover="link_hover(this);" onmouseout="link_unhover(this);"></a>
+                <a href="#"><img border="0" alt="twitter" alt="twitter" src="css/icon/twitter.png" onmouseover="twitt_hover(this);" onmouseout="twitt_unhover(this);"></a>
+                <a href="#"><img border="0" alt="googe plus" src="css/icon/google-p.png" onmouseover="googlep_hover(this);" onmouseout="googlep_unhover(this);"></a>
+                <a href="#"><img border="0" alt="pinterest" src="css/icon/pinterest.png" onmouseover="pint_hover(this);" onmouseout="pint_unhover(this);"></a>
+                <a href="#"><img border="0" alt="rss" src="css/icon/rss.png" 
+                                 onmouseover="rss_hover(this);" onmouseout="rss_unhover(this);"></a>     
+            </div>              
         <nav>
-            <a href="#">Sign Up</a>
-            <a href="#">Login |</a>
-            <a href="#">RSS Feeds |</a>
-            <a href="#">Archived News</a>
+            <ul>
+                <li><a href="#">Sign Up |</a></li>
+                <li><a href="#">Login |</a></li>
+                <li><a href="#">RSS Feeds |</a></li>
+                <li><a href="#">Archived News</a></li> 
+            </ul>
         </nav>
-        <div class="social">
-            <a href="#"><img border="0" id="linkedin" alt="linkedin" src="css/icon/linkeind.png" width="32" height="32" onmouseover="link_hover(this);" onmouseout="link_unhover(this);"></a>
-            <a href="#"><img border="0" alt="twitter" alt="twitter" src="css/icon/twitter.png" width="32" height="32" onmouseover="twitt_hover(this);" onmouseout="twitt_unhover(this);"></a>
-            <a href="#"><img border="0" alt="googe plus" src="css/icon/google-p.png" width="32" height="32" onmouseover="googlep_hover(this);" onmouseout="googlep_unhover(this);"></a>
-            <a href="#"><img border="0" alt="pinterest" src="css/icon/pinterest.png" width="32" height="32" onmouseover="pint_hover(this);" onmouseout="pint_unhover(this);"></a>
-            <a href="#"><img border="0" alt="rss" src="css/icon/rss.png" width="32" height="32" onmouseover="rss_hover(this);" onmouseout="rss_unhover(this);"></a>     
-            
-            
-            
-            
-            
+        <div class="toogle-btn">
+            <a href="#"><img border="0" id="linkedin" alt="linkedin" src="css/icon/minus.png" onclick=""></a>
+        </div>
+    </div>
+    <div class="main-nav"> 
+         <nav>
+            <ul>
+                <li><a href="#">homepage</a></li>
+                <li><a href="#">style demo</a></li>
+                <li><a href="#">full width</a></li>
+                <li><a href="#">dropdown</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">porfolio</a></li>
+                <li><a href="#">link text</a></li>
+                <li><a href="#">long link text</a></li>
+             </ul>
+        </nav>
+                    <div class="main-nav-bottom-line"></div>
+    </div>
+        <div class="search-box" style="font-size: 12px; float: right; padding-right: 20px; margin-top: 78px;">
+            <input type="text" placeholder="Search Our Website..." style="border-radius: 5px; border: none; width: 215px; background: #f1f1f1; height: 31px; padding-left:7px" id="search-value">
+             <a href="#"  style="padding-right:5px; ; background: #0099ff; padding: 10px 16px; border-radius: 5px; border: none; text-align: center; text-decoration: none;">SEARCH</a>
+        </div>
+    <div class="web-textbox" style="background: white; padding-top: 45px;">
+        <div class="web-title"  style="margin-left:20px;">
+            <h1 style="font-size: 36px; font-weight: normal; color: #333333">NobodysFool</h1>
+            <p style="font-size: 12px;color: #999999"> Free PSD Website Template</p>
         </div>
     </div>
 </div>

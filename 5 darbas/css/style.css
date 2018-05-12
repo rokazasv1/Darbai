@@ -1,19 +1,70 @@
 body {
-  font-family: "Georgia Regular", Times, serif;
+  font-family: "Georgia", Times, serif;
   margin: auto;
   width: 1000px;
   margin-top: 2%;
   background: #282828; }
 
-.top-nav {
+h1 {
+  margin: 0 auto; }
+
+.container {
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.4); }
+
+.container .top-nav {
   height: 60px;
   background: #2e2e2e;
   padding-left: 20px; }
+  .container .top-nav ul {
+    list-style: none;
+    padding: 0; }
+    .container .top-nav ul li {
+      float: left; }
+      .container .top-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        display: block;
+        padding-left: 2px;
+        padding-top: 23px; }
 
-.top-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px; }
+.container .top-nav .social {
+  float: right;
+  margin-top: 14px;
+  padding-right: 20px; }
+  .container .top-nav .social img {
+    margin-right: 7px;
+    height: 32px;
+    width: 32px; }
 
-nav {
-  padding-top: 20px; }
+.container .toogle-btn {
+  clear: both;
+  padding-top: 10px;
+  float: right;
+  padding-right: 20px; }
+  .container .toogle-btn img {
+    width: 31px;
+    height: 31px; }
+
+.container .main-nav {
+  background: white; }
+  .container .main-nav ul {
+    clear: both;
+    list-style: none;
+    padding: 0; }
+    .container .main-nav ul li {
+      float: left; }
+      .container .main-nav ul li a {
+        text-decoration: none;
+        color: #2e2e2e;
+        font-size: 14px;
+        margin-left: 20px; }
+        .container .main-nav ul li a:hover {
+          padding-bottom: 18px;
+          border-bottom: 5px solid #0099ff; }
+
+.main-nav-bottom-line {
+  height: 5px;
+  background-color: #f1f1f1;
+  margin-left: 20px;
+  margin-top: 35.5px; }
