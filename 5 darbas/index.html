@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
 <style>
-	test
-.intro-container {
+    a
+.container .intro-container .flex-container{
+	float:left; 
     background: white;
 }
-.intro-textbox-right{padding-top: 40px;background: white;}    
-    
-.intro-container .flex-container{
-	float:left; /* Standard syntax */
-    background: white;
-}
-.intro-container .flex-container .column{
+    .flex-container-clear{
+        float:left; 
+        background: white;
+        clear: both;
+    }
+.container .intro-container .flex-container .column{
 	width: 225px; 
     height: 230px;
     float:left;
     padding-left:20px;
     padding-right:10px;
-    
     text-align: center;
     }
-    .flex-container .image  {
+
+    .intro-container .flex-container .image  {
         text-align: center;
         padding-bottom: 10px;
     } 
-    .flex-container .text  {
+    .intro-container .flex-container .text  {
         color: #0099ff;
         font-size: 16px;
         padding-bottom: 20px;
     }    
-    .flex-container .descp  {
+    .intro-container .flex-container .descp  {
         color: #666666;
         font-size: 13px;
         padding-bottom: 30px;
     }    
     
-    .footer .textbox-left{
+    .footer .container-left{
         float:left;
     }
     .footer .flex-container .column{
@@ -77,17 +77,17 @@
         text-decoration: none;
          border-bottom: 1px solid #232323;
 }
-        .footer .flex-container .q-links ul:last-child {
+    .footer .flex-container .q-links ul:last-child {
          border-bottom: none;
 }
-        .footer .flex-container .q-links ul a{
+    .footer .flex-container .q-links ul a{
    list-style: none;
    padding: 0;
    color: #0099ff;
         text-decoration: none;
             
 }
-        .footer .flex-container .q-links ul span{
+    .footer .flex-container .q-links ul span{
 
 color: white;
 }
@@ -231,31 +231,23 @@ function rss_unhover(element) {
                 <input type="text" class="search-box-input" placeholder="Search Our Website...">
                 <input type="button" class="search-box-btn" value="SEARCH">
             </div>
-        <div class="web-textbox">
-            <div class="web-title">
+        <div class="web-container">
+            <div class="web-logo-title">
                 <h1>NobodysFool</h1>
                 <p> Free PSD Website Template</p>
             </div>
         </div>
         </div>
-    <section class="slideshow" style="width:100%;  height: 450px; background: #f1f1f1;">
-        <div class="simple-line-light" style="height: 5px; background: #e9e9e9;"></div>
-            <div class="slideshow-left" style="float: left; padding-left: 20px; width: 350px">
-                <h2 style="font-size: 36px; padding-top: 150px; margin: 0; color: #333333;letter-spacing: -2px">Your title can be long and descriptive</h2>
-                <p style="color:#666666;margin-top:20px;">Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orccoli congue elis et curabitur.</p>
-                <input type="button" class="slideshow-box-btn" value="READ MORE »" style="
-    background: #0099ff;
-    height: 31px;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    color: white; 
-    ">
+    <section class="slideshow">
+        <div class="simple-line-light"></div>
+            <div class="slideshow-left">
+                <h2>Your title can be long and descriptive</h2>
+                <p>Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orccoli congue elis et curabitur.</p>
+                <input type="button" class="slideshow-box-btn" value="READ MORE »">
             </div>
-            <div class="slideshow-right" style="float: right; padding-right: 20px; margin-top: 5px; padding-left: 60px">
+            <div class="slideshow-right">
                 <img src="img/550x440.png">
-                <div class="img-btns" style="margin-left: 20px; margin-top: -38px">
+                <div class="img-btns">
                   <span class="dot"></span> 
                   <span class="dot"></span> 
                   <span class="dot"></span>
@@ -264,12 +256,13 @@ function rss_unhover(element) {
                 </div>
             </div>
     </section>
+    
     <section class="intro-container" >
-        <div class="simple-line-light" style="height: 5px; background: #e9e9e9;"></div>
-        <div class="intro-textbox-left" style="padding-top: 39px; background: white; padding-left: 20px;float: left;pading-bottom: 40px;">
+        <div class="simple-line-light"></div>
+        <div class="intro-container-left">
             <div class="img"><img src="img/responsive-display.png" ></div>
         </div>
-        <div class="intro-textbox-right" style="float: left;">
+        <div class="intro-container-right" style="float: left;">
             <div class="flex-container">
                 <div class="column">
                     <div class="image"><img src="img/85x80.png"></div>
@@ -286,7 +279,7 @@ function rss_unhover(element) {
                     </div>
                 </div>
             </div>
-            <div class="flex-container" style="padding-top: 0px; clear: both">
+            <div class="flex-container flex-container-clear">
                 <div class="column">
                     <div class="image"><img src="img/85x80.png"></div>
                     <div class="text">Vivamuslibero Augue</div>
@@ -322,7 +315,7 @@ function rss_unhover(element) {
     </section> 
     <footer class="footer" style="height: 385px;background: #1a1a1a">
         <div class="simple-line-dark" style="height: 5px; background: black;"></div>
-        <div class="textbox-left" style="float: left;">
+        <div class="container-left" style="float: left;">
             <div class="flex-container">
                 <div class="column">
                     <div class="text">ABOUT US</div>
