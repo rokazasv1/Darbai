@@ -3,6 +3,7 @@ body {
   margin: auto;
   width: 1000px;
   margin-top: 2%;
+  margin-bottom: 2%;
   background: #282828; }
 
 h1 {
@@ -63,8 +64,62 @@ h1 {
           padding-bottom: 18px;
           border-bottom: 5px solid #0099ff; }
 
-.main-nav-bottom-line {
+.container .main-nav-bottom-line {
   height: 5px;
   background-color: #f1f1f1;
   margin-left: 20px;
   margin-top: 35.5px; }
+
+.container .logo .web-textbox {
+  background: white;
+  padding-top: 45px; }
+
+.container .logo .search-box {
+  font-size: 12px;
+  float: right;
+  padding-right: 20px;
+  margin-top: 78px; }
+  .container .logo .search-box .search-box-input {
+    border-radius: 5px;
+    border: none;
+    width: 215px;
+    background: #f1f1f1;
+    height: 31px;
+    padding-left: 7px; }
+  .container .logo .search-box .search-box-btn {
+    margin-left: 5px;
+    background: #0099ff;
+    height: 31px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white; }
+
+.container .logo .web-textbox .web-title {
+  padding-left: 20px;
+  padding-bottom: 45px; }
+  .container .logo .web-textbox .web-title h1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #333333; }
+  .container .logo .web-textbox .web-title p {
+    font-size: 12px;
+    color: #999999; }
+
+slideshow-box-btn
+.container .slideshow .slideshow-right .dot {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding-top: 2px; }
+  slideshow-box-btn
+.container .slideshow .slideshow-right .dot:hover {
+    background-color: transparent;
+    border: 2px solid black; }

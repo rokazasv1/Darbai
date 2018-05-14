@@ -1,3 +1,4 @@
+//global
 $font-family-display: "Georgia", Times, serif;
 $body-margin: auto;
 $body-width: 1000px;
@@ -9,10 +10,11 @@ $float-r: right;
 $float-l: left;
 $display-bl: block;
 $none:none;
+$center:center;
 $padding-zero:0;
 $nav_textdecorat: none;
 $cont-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.4);
-
+$white-color:white;
 //top nav style
 $top-nav-height: 60px;
 $top-nav-background: #2e2e2e;
@@ -49,6 +51,34 @@ $main-nav-bottom-line-padding-top:35.5px;
 $main-nav-bottom-line-heigt:5px;
 $main-nav-bottom-line-color:#f1f1f1;
 
+//top search
+$search-box-border-radius:5px; 
+$search-box-font-size:12px; 
+$search-box-margin-top:78px;
+$search-box-width:215px;
+$search-box-background:#f1f1f1;
+$search-box-height:31px; 
+$search-box-pad-left:7px;
+
+//web title div
+$web-title-p-textbox:45px;
+
+//web title search-box 
+$search-box-border-radius:5px;
+$search-box-padding:10px 16px; 
+$search-box-m-left:5px;
+$search-box-input-background:#f1f1f1; 
+$search-box-btn-background:#0099ff;
+
+//web title text
+$padding-bottom:45px;
+//web title h1
+$web-title-h1-font-size:36px; 
+$web-title-h1-font-weight:normal; 
+$web-title-h1-color:#333333;
+//web title p
+$web-title-p-font-size:12px;
+$web-title-p-color: #999999;
 body{
     font-family: $font-family-display;
     margin: $body-margin;
@@ -125,10 +155,69 @@ h1{
                 }       
             }
 }
-.main-nav-bottom-line{
-
+.container .main-nav-bottom-line{
     height: $main-nav-bottom-line-heigt; 
     background-color: $main-nav-bottom-line-color; 
     margin-left: $main-nav-bottom-line-padding-left;
     margin-top: $main-nav-bottom-line-padding-top;
+}
+
+.container .logo .web-textbox{
+    background: $main-nav-background; 
+    padding-top:$web-title-p-textbox;
+}
+.container .logo .search-box {
+    font-size: $search-box-font-size; 
+    float: $float-r; 
+    padding-right: $padding-right; 
+    margin-top: $search-box-margin-top;
+        & .search-box-input{
+        border-radius: $search-box-border-radius;
+        border: $none; 
+        width: $search-box-width; 
+        background: $search-box-input-background; 
+        height:$search-box-height; 
+        padding-left:$search-box-pad-left;
+        }
+            & .search-box-btn{
+                margin-left:$search-box-m-left;
+                background: $search-box-btn-background; 
+                height:$search-box-height; 
+                border-radius:$search-box-border-radius;
+                border: $none; 
+                text-align: $center; 
+                text-decoration: $none;
+                color:$white-color;
+            }
+}
+.container .logo .web-textbox .web-title{
+    padding-left:$padding-left;
+    padding-bottom:$padding-bottom;
+    & h1{
+        font-size:$web-title-h1-font-size; 
+        font-weight:$web-title-h1-font-weight; 
+        color: $web-title-h1-color;
+    }
+    & p {
+        font-size:$web-title-p-font-size;
+        color: $web-title-p-color;
+    }
+}
+slideshow-box-btn
+
+.container .slideshow .slideshow-right .dot {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding-top: 2px;
+      &:hover{
+      background-color:transparent;
+      border: 2px solid black;
+      }
 }

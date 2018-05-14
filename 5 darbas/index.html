@@ -2,7 +2,141 @@
 <html>
 <style>
 
+.intro-textbox-right{padding-top: 40px;background: white;}    
+    
+.intro-container .flex-container{
+	float:left; /* Standard syntax */
+    background: white;
+}
+.intro-container .flex-container .column{
+	width: 225px; 
+    height: 230px;
+    float:left;
+    padding-left:20px;
+    padding-right:10px;
+    
+    text-align: center;
+    }
+    .flex-container .image  {
+        text-align: center;
+        padding-bottom: 10px;
+    } 
+    .flex-container .text  {
+        color: #0099ff;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }    
+    .flex-container .descp  {
+        color: #666666;
+        font-size: 13px;
+        padding-bottom: 30px;
+    }    
+    
+    .footer .textbox-left{
+        float:left;
+    }
+    .footer .flex-container .column{
+	width: 225px; 
+    height: 330px;
+    float:left;
+    padding-left: 20px;
+    font-size: 12px;
 
+    }
+    .footer .flex-container .text  {
+        margin-top: 40px;
+        color: white;
+        padding-bottom: 25px;
+            font-size: 12px;
+    }    
+    .footer .flex-container .image  {
+        text-align: center;
+        padding-bottom: 20px;
+    } 
+    .footer .flex-container .read-more  {
+        text-align: right;
+        padding: 0;
+        padding-bottom: 45px;          
+        color: #0099ff;     
+    }    
+    .footer .flex-container .q-links {
+        padding-bottom: 45px;
+        height: 250px;         
+    }    
+    
+    .footer .flex-container .q-links ul {
+   list-style: none;
+   padding: 0px;
+    margin: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+   color: #0099ff;
+        text-decoration: none;
+         border-bottom: 1px solid #232323;
+}
+        .footer .flex-container .q-links ul:last-child {
+         border-bottom: none;
+}
+        .footer .flex-container .q-links ul a{
+   list-style: none;
+   padding: 0;
+   color: #0099ff;
+        text-decoration: none;
+            
+}
+        .footer .flex-container .q-links ul span{
+
+color: white;
+}
+    
+    
+    footer .flex-container .blog-post-box{
+        color: #666666;
+    }
+    footer .flex-container .blog-post-box .title{
+        font-size: 14px;
+    }   
+    footer .flex-container .blog-post-box .content, footer .flex- footer .flex-container .blog-post-box .content .autor{
+        margin-top:  20px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    footer .flex-container .blog-post-box .read-more  {
+        padding-bottom: 10px;
+        
+    } 
+    
+    footer .flex-container .input-container{
+        padding-right: 20px;
+    }
+    footer .flex-container .input-container input {
+        height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        background: #232323;
+        border: none;
+    }
+    footer .flex-container .input-container textarea{
+        width: 100%;
+        padding-left: 10px;
+        height: 110px;
+        resize: none;
+         background: #232323;
+        border: none;
+        height: 75px;
+    }
+    footer .flex-container .input-container .input-text-btn{
+        width: 75px;
+       text-align: center;
+        font-size: 13px;
+    background: #0099ff;
+        margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white; }
+    }    
+    
 </style>
 <head>
     <script>
@@ -87,16 +221,175 @@ function rss_unhover(element) {
                 <li><a href="#">long link text</a></li>
              </ul>
         </nav>
-                    <div class="main-nav-bottom-line"></div>
+        <div class="main-nav-bottom-line"></div>
     </div>
-        <div class="search-box" style="font-size: 12px; float: right; padding-right: 20px; margin-top: 78px;">
-            <input type="text" placeholder="Search Our Website..." style="border-radius: 5px; border: none; width: 215px; background: #f1f1f1; height: 31px; padding-left:7px" id="search-value">
-             <a href="#"  style="padding-right:5px; ; background: #0099ff; padding: 10px 16px; border-radius: 5px; border: none; text-align: center; text-decoration: none;">SEARCH</a>
+        <div class="logo">
+            <div class="search-box" >
+                <input type="text" class="search-box-input" placeholder="Search Our Website...">
+                <input type="button" class="search-box-btn" value="SEARCH">
+            </div>
+        <div class="web-textbox">
+            <div class="web-title">
+                <h1>NobodysFool</h1>
+                <p> Free PSD Website Template</p>
+            </div>
         </div>
-    <div class="web-textbox" style="background: white; padding-top: 45px;">
-        <div class="web-title"  style="margin-left:20px;">
-            <h1 style="font-size: 36px; font-weight: normal; color: #333333">NobodysFool</h1>
-            <p style="font-size: 12px;color: #999999"> Free PSD Website Template</p>
+        </div>
+    <section class="slideshow" style="width:100%;  height: 450px; background: #f1f1f1;">
+        <div class="simple-line-light" style="height: 5px; background: #e9e9e9;"></div>
+            <div class="slideshow-left" style="float: left; padding-left: 20px; width: 350px">
+                <h2 style="font-size: 36px; padding-top: 150px; margin: 0; color: #333333;letter-spacing: -2px">Your title can be long and descriptive</h2>
+                <p style="color:#666666;margin-top:20px;">Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orccoli congue elis et curabitur.</p>
+                <input type="button" class="slideshow-box-btn" value="READ MORE »" style="
+    background: #0099ff;
+    height: 31px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white; 
+    ">
+            </div>
+            <div class="slideshow-right" style="float: right; padding-right: 20px; margin-top: 5px; padding-left: 60px">
+                <img src="img/550x440.png">
+                <div class="img-btns" style="margin-left: 20px; margin-top: -38px">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+            </div>
+    </section>
+    <section class="intro-container" >
+        <div class="simple-line-light" style="height: 5px; background: #e9e9e9;"></div>
+        <div class="intro-textbox-left" style="padding-top: 39px; background: white; padding-left: 20px;float: left;pading-bottom: 40px;">
+            <div class="img"><img src="img/responsive-display.png" ></div>
+        </div>
+        <div class="intro-textbox-right" style="float: left;">
+            <div class="flex-container">
+                <div class="column">
+                    <div class="image"><img src="img/85x80.png"></div>
+                    <div class="text">Vivamuslibero Augue</div>
+                    <div class="descp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image"><img src="img/85x80.png"></div>
+                    <div class="text">Vivamuslibero Augue</div>
+                    <div class="descp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container" style="padding-top: 0px; clear: both">
+                <div class="column">
+                    <div class="image"><img src="img/85x80.png"></div>
+                    <div class="text">Vivamuslibero Augue</div>
+                    <div class="descp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image"><img src="img/85x80.png"></div>
+                    <div class="text">Vivamuslibero Augue</div>
+                    <div class="descp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="adds-container" style="background: white; padding-left: 20px; padding-bottom: 40px;padding-right: 20px;clear: both">
+            <div class="left-space-background" style="width: 10px; background: #0099ff;height: 120px; float: left;"></div>
+            <div class="left-background-text" style="background: #e0e0e0;height: 120px;">
+                <div class="adds-text-color" style="color: #333; padding-left: 30px; float: left;padding-top: 35px">
+                    <div class="adds-title" style="font-size: 36px; ">Lorem ipsum dolor sit amet elit !</div>
+                    <div class="adds-bottom-title" style="">Why not try our services today, you won’t regret your choice !</div>
+                </div>
+                <div class="adds-btn" style="float: left;padding-left: 80px; padding-top: 35px"><input type="button" value="CONTACT US TODAY" style="color:#e6e6e6;    background: #0099ff;
+    border-radius: 5px;
+    border: none;
+                    height: 60px;
+    text-align: center;
+    font-size: 26px;"> </div>
+            </div>
+        </div>
+    </section> 
+    <footer class="footer" style="height: 385px;background: #1a1a1a">
+        <div class="simple-line-dark" style="height: 5px; background: black;"></div>
+        <div class="textbox-left" style="float: left;">
+            <div class="flex-container">
+                <div class="column">
+                    <div class="text">ABOUT US</div>
+                    <div class="image"><img src="img/215x90.png"></div>
+                    <div class="descp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque. Quisque non luctus sem. Nullam non magna vel nisi posuere bibendum vitae sed dui.
+                    </div>
+                    <div class="read-more">Read More »</div>
+                </div>
+                <div class="column">
+                    <div class="text">QUICK LINKS</div>
+                   <div class="q-links">
+                       <ul><span>»</span> <a href="#">Lorem ipsum dolor sit</a></ul>
+                       <ul><span>»</span> <a href="#">Amet consectetur</a></ul>
+                       <ul><span>»</span> <a href="#">Praesent vel sem id</a></ul>
+                       <ul><span>»</span> <a href="#">Curabitur hendrerit est</a></ul>
+                       <ul><span>»</span> <a href="#">Aliquam eget erat nec sapien</a></ul>
+                       <ul><span>»</span> <a href="#">Cras id augue nunc</a></ul>
+                       <ul><span>»</span> <a href="#">In nec justo non</a></ul>
+                       <ul><span>»</span> <a href="#">Vivamus mollis enim ut</a></ul>
+                       <ul><span>»</span> <a href="#">Curabitur hendrerit est</a></ul>
+                       <ul><span>»</span> <a href="#">Sed a nulla urna</a></ul>
+                       
+
+                    </div>
+                </div>
+                  <div class="column">
+                    <div class="text" >LATEST BLOG POSTS</div>
+                      <div class="blog-post-box">
+                          <div class="title">Post Title</div>
+                          <div class="autor">
+                              Admin, domainname.com
+                              Friday, 6th April 2000
+                          </div>
+                          <div class="content">
+                              Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+                          </div>
+                          <div class="read-more">Read More »</div>
+                      </div>
+                      <div class="blog-post-box">
+                          <div class="title">Post Title</div>
+                          <div class="autor">
+                              Admin, domainname.com
+                              Friday, 6th April 2000
+                          </div>
+                          <div class="content">
+                              Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+                          </div>
+                          <div class="read-more">Read More »</div>
+                      </div>
+                    
+                </div>
+                  <div class="column">
+                    <div class="text">CONTACT US</div>
+                        <div class="input-container">
+                            <input type="text" class="input-text-name" placeholder="Name">
+                            <input type="email" class="input-text-email" placeholder="Email">
+                            <input type="text" class="input-text-text" placeholder="Subject">
+                            <textarea class="input-textarea" placeholder="Message"></textarea>
+                            <input type="button" value="SUBMIT" class="input-text-btn">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrights" style="height: 60px;">
+        <div class="simple-line-light-small" style="height: 1px; background: #2d2d2d;"></div>
+        <div class="copyrights-text-container" style="background: #222222; color: #666666;margin-top: 20px; padding-left: 20px; padding-right: 20px">
+            <div class="left" style="float: left">Copyright © 2013 Domain Name - All Rights Reserved</div>
+            <div class="right" style="float: right">Template by OS Templates</div>
         </div>
     </div>
 </div>
