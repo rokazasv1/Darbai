@@ -137,7 +137,8 @@ h1 {
     padding-left: 60px; }
     .container .slideshow .slideshow-right .img-btns {
       position: absolute;
-      bottom: 150px; }
+      bottom: 150px;
+      padding-left: 20px; }
   .container .slideshow p {
     color: #666666;
     margin-top: 20px; }
@@ -153,43 +154,43 @@ h1 {
     height: 85px;
     width: 80px; }
 
-.container .intro-container {
+.container .slideshow-left-container {
   background: white; }
-  .container .intro-container .intro-container-right {
+  .container .slideshow-left-container .slideshow-left-container-right {
     padding-top: 40px;
     background: white; }
-  .container .intro-container .intro-container-left {
+  .container .slideshow-left-container .slideshow-left-container-left {
     padding-top: 39px;
     background: white;
     padding-left: 20px;
     float: left;
     padding-bottom: 40px; }
-  .container .intro-container .image {
+  .container .slideshow-left-container .image {
     text-align: center;
     padding-bottom: 10px; }
-    .container .intro-container .image img {
+    .container .slideshow-left-container .image img {
       height: 86px;
       width: 80px; }
-  .container .intro-container .flex-container-clear {
+  .container .slideshow-left-container .flex-container-clear {
     float: left;
     background: white;
     clear: both; }
-  .container .intro-container .column {
-    width: 225px;
-    height: 230px;
+  .container .slideshow-left-container .column {
+    width: 235px;
+    height: 250px;
     float: left;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 20px;
     text-align: center; }
-  .container .intro-container .text {
+  .container .slideshow-left-container .text {
     color: #0099ff;
     font-size: 16px;
     padding-bottom: 20px; }
-  .container .intro-container .descp {
+  .container .slideshow-left-container .descp {
     color: #666666;
     font-size: 13px;
+    line-height: 1.5;
     padding-bottom: 30px; }
-  .container .intro-container .container-left {
+  .container .slideshow-left-container .container-left {
     float: left; }
 
 footer .flex-container .column {
@@ -280,8 +281,43 @@ footer .flex-container .blog-post-box {
   footer .flex-container .blog-post-box .read-more {
     padding-bottom: 10px; }
 
+.container .adds-container {
+  background: white;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  clear: both; }
+  .container .adds-container .left-space-background {
+    width: 10px;
+    background: #0099ff;
+    height: 120px;
+    float: left; }
+  .container .adds-container .left-background-text {
+    background: #e0e0e0;
+    height: 120px; }
+    .container .adds-container .left-background-text .adds-text-color {
+      color: #333;
+      padding-left: 30px;
+      float: left;
+      padding-top: 35px; }
+    .container .adds-container .left-background-text .adds-title {
+      font-size: 36px; }
+    .container .adds-container .left-background-text .adds-btn {
+      float: left;
+      padding-left: 80px;
+      padding-top: 35px; }
+    .container .adds-container .left-background-text .adds-input-btn {
+      color: #e6e6e6;
+      background: #0099ff;
+      border-radius: 5px;
+      border: none;
+      height: 60px;
+      text-align: center;
+      font-size: 26px; }
+
 .container .slideshow .slideshow-right .dot {
   box-sizing: border-box;
+  position: relative;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -290,7 +326,8 @@ footer .flex-container .blog-post-box {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  padding-top: 2px; }
+  padding-top: 2px;
+  top: 210px; }
   .container .slideshow .slideshow-right .dot:hover {
     background-color: transparent;
     border: 2px solid black; }
