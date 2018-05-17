@@ -1,2 +1,5 @@
-
-9 darbas/New Text Document.txt
+*.git
+*.idea
+*.7z
+*.psd
+*.rar
