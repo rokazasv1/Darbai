@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d58f1c-8861-48cd-9b6d-5b333950b1b9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/1 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1 darbas/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2 darbas/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3 darbas/3 darbas.html" beforeDir="false" afterPath="$PROJECT_DIR$/3 darbas/3 darbas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4 darbas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/5 darbas/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="186">
               <caret line="374" column="18" selection-start-line="374" selection-start-column="18" selection-end-line="374" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -75,6 +81,7 @@
         <option value="$PROJECT_DIR$/1 darbas/index.html" />
         <option value="$PROJECT_DIR$/3 darbas/3 darbas.html" />
         <option value="$PROJECT_DIR$/4 darbas/index.html" />
+        <option value="$PROJECT_DIR$/5 darbas/index.html" />
       </list>
     </option>
   </component>
@@ -87,7 +94,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="308" />
     <option name="y" value="36" />
     <option name="width" value="1352" />
@@ -125,6 +132,11 @@
               <item name="Darbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="Darbs" type="462c0819:PsiDirectoryNode" />
               <item name="4 darbas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Darbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Darbs" type="462c0819:PsiDirectoryNode" />
+              <item name="5 darbas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,15 +176,15 @@
       <option name="presentableId" value="Default" />
       <updated>1526023212009</updated>
       <workItem from="1526023213668" duration="630000" />
-      <workItem from="1526925515382" duration="8980000" />
+      <workItem from="1526925515382" duration="9218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9610000" />
+    <option name="totallyTimeSpent" value="9848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="534" y="74" width="1352" height="682" extended-state="0" />
+    <frame x="308" y="36" width="1352" height="682" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.248503" />
@@ -226,6 +238,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="374" column="18" selection-start-line="374" selection-start-column="18" selection-end-line="374" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
