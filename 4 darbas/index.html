@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html>
 <style>
-    h1,h2,h3,h4,h5{
+    * {
+        margin: 0;
+    }
+
+    h1, h2, h3, h4, h5 {
         font-family: "Raleway", sans-serif;
-        margin: 0px auto;
+
         line-height: 1.5;
         display: block;
         font-weight: 200;
         letter-spacing: 5px;
     }
-    h1,invate-page-title{
+
+    h1, .invate-page-title {
         font-size: 64px;
     }
-    h2{
-        font-size: 30px;      
+
+    h2 {
+        font-size: 30px;
     }
-    a{
+
+    a {
         text-decoration: none;
     }
-    p{
+
+    p {
         font-family: "Raleway", sans-serif;
         font-size: 15px;
         line-height: 1.5;
     }
-    body{
-        margin: 0px auto;
-        
+    body,html{
+        height: 100%;
     }
-    header{
+    header {
         background-image: url(IMG/1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 100%;
-        text-align: center;
-        height: 660px;
+        height: 100%;
         filter: grayscale(50%);
     }
-    header .text-box{
+
+    header .text-box {
         padding-top: 170px;
         color: white;
     }
-    
-    nav{
+
+    nav {
         position: fixed;
         width: 100%;
         z-index: 1;
         bottom: 0;
         color: #000;
-        background-color: rgb(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         padding: 12px 15px;
         text-align: center;
         font-size: 24px;
         z-index: 1;
-        
+
     }
+
     nav a {
         float: left;
         padding: 8px 0px;
@@ -64,68 +71,73 @@
         text-decoration: none;
         font-size: 17px;
     }
+
     nav:hover {
-        background-color:  white;
+        background-color: white;
         color: black;
-        }
+    }
+
     nav a:hover {
-        background-color:  #ccc;
+        background-color: #ccc;
         color: black;
-        }   
-    nav .black-box:hover{
+    }
+
+    nav .black-box:hover {
         background-color: black;
         color: white;
     }
-    
-    section{
+
+    section {
         color: #000;
         background-color: #f2e1e1;
         padding-top: 70px;
         padding-bottom: 20px;
         text-align: center;
     }
-    
-    .jane-page-title, .wedding-page-title{
+
+    .jane-page-title, .wedding-page-title {
         color: #757575;
     }
-    .jane-page-title, .wedding-page-title{
+
+    .jane-page-title, .wedding-page-title {
         margin-bottom: 35px;
     }
-    
+
     .jane-page-img img, .jane-page-text, .wedding-page-img img, .wedding-page-text {
         max-width: 900px;
         margin: 0 auto;
         filter: grayscale(75%);
-        border-radius: 5px;   
+        border-radius: 5px;
         width: 90%;
     }
-    
-    .jane-page-text{
+
+    .jane-page-text {
         margin-top: 40px;
         text-align: left;
         line-height: 2;
         margin-bottom: 30px;
-        font-style: italic;    
+        font-style: italic;
     }
-   .janes-page-button{
+
+    .janes-page-button {
         padding-top: 40px;
         padding-bottom: 80px;
     }
-    .janes-page-button .button{
+
+    .janes-page-button .button {
         color: #fff;
         background: black;
         padding: 20px 30px;
         font-size: 18px;
         border-radius: 6px;
-        `
-        
     }
-    .janes-page-button .button:hover, .page-bottom .button:hover{
+
+    .janes-page-button .button:hover, .page-bottom .button:hover {
         color: #000;
         background-color: #ccc;
     }
-    
-    .invate-page{
+
+    .invate-page {
         background-image: url(IMG/3.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -134,175 +146,200 @@
         text-align: center;
         height: 600px;
     }
-    .invate-textbox{
+
+    .invate-textbox {
         color: white;
         margin-top: 150px;
     }
-    
-    .wedding-page-title{
+
+    .wedding-page-title {
         text-transform: uppercase;
     }
-    .wedding-page-img{
+
+    .wedding-page-img {
         filter: grayscale(70%);
     }
-    .wedding-page-text{
+
+    .wedding-page-text {
         display: inline-block;
         margin-top: 40px;
     }
-    .wedding-page-text-left{
-        float:left;
+
+    .wedding-page-text-left {
+        float: left;
         width: 45%;
         padding-right: 1%;
     }
-    .wedding-page-text-right{
-        float:right;
+
+    .wedding-page-text-right {
+        float: right;
         width: 45%;
         padding-left: 1%;
     }
+
     .page-bottom {
         background-color: #ffdddd;
         letter-spacing: 2px;
     }
+
     .page-bottom p {
         font-size: 18px;
         line-height: 2;
         margin-bottom: 40px;
     }
-    .page-bottom-button{
-        
+
+    .page-bottom-button {
+
         padding-bottom: 80px;
     }
-    .page-bottom-button .button{
+
+    .page-bottom-button .button {
         color: #fff;
         background-color: #f88078;
         padding: 20px 60px;
         font-size: 18px;
         border-radius: 6px;
-        box-shadow: 0px;
+        box-shadow: none;
 
     }
-    .footer-text{
+
+    .footer-text {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
         background-color: black;
         color: white;
     }
-    .footer-text a{
+
+    .footer-text a {
         color: white;
         text-decoration: underline;
     }
-    .space_bottom{
+
+    .space_bottom {
         padding-top: 59px;
     }
+
     @media only screen and (max-width: 600px) {
-        .space_bottom{
+        .space_bottom {
             display: none;
         }
-        nav{
+
+        nav {
             display: none;
         }
     }
 
 </style>
 <head>
-<title>4 uzduotis</title>
+    <title>4 uzduotis</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-    <container>
-        <header id="home">
-            <div class="text-box">
-                <div class="text-box-title">
-                    <h1>Jane & John</h1>
-                </div>
-                <h2>Are getting married</h2>
-                <h2><b>17.07.2017</b></h2> 
+<div class="container">
+    <header id="home">
+        <div class="text-box">
+            <div class="text-box-title">
+                <h1>Jane & John</h1>
             </div>
-        </header>
-        
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#jane">Jane & John</a>
-            <a href="#wedding">Wedding</a>
-            <a href="#rsvp" class="black-box">RSVP</a>
-        </nav>
-        <!--  -->
-        <section id="jane">
-            <div class="janes-page">
-                <div class="jane-page-title">
-                    <h2>Jane & John</h2>
-                </div>
-                <div class="jane-page-img">
-                    <img src="IMG/2.jpg">
-                </div>
-                <div class="jane-page-text">
-                    <p>
-                    You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <h2>Are getting married</h2>
+            <h2><b>17.07.2017</b></h2>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jane">Jane & John</a></li>
+            <li><a href="#wedding">Wedding</a></li>
+            <li><a href="#rsvp" class="black-box">RSVP</a></li>
+
+        </ul>
+    </nav>
+    <!--  -->
+    <section id="jane">
+        <div class="janes-page">
+            <div class="jane-page-title">
+                <h2>Jane & John</h2>
+            </div>
+            <div class="jane-page-img">
+                <img src="IMG/2.jpg">
+            </div>
+            <div class="jane-page-text">
+                <p>
+                    You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
                 </p>
-                </div>
-                <div class="janes-page-button">
-                    <a href="#wedding" class="button">Wedding Details</a>
-                </div>
             </div>
-        </section>
-        <!--  -->
-        <section class="invate-page">
-            <div class="invate-textbox">
-                <div class="invate-page-title">
-                    <h1>You Are Invited</h1>
-                </div>
-                <div class="invate-page-text">
-                    <h2>Of course..</h2>
-                </div>                 
+            <div class="janes-page-button">
+                <a href="#wedding" class="button">Wedding Details</a>
             </div>
-        </section>
-        <!--  -->
-        <section>
-            <div class="wedding" id="wedding">
-                 <div class="wedding-page-title">
-                    <h2>THE WEDDING</h2>
-                </div>
-                <div class="wedding-page-img">
-                    <img src="IMG/4.jpg">
-                </div>
-                
-                    <div class="wedding-page-text">
-                        <div class="wedding-page-text-left">
-                            <div class="wedding-page-text-left-title">
-                                <h2>When</h2>
-                                <p>Wedding Ceremony - 2:00pm</p>
-                                <p>Reception & Dinner - 5:00pm</p>
-                            </div>
-                        </div>
-                        <div class="wedding-page-text-right">
-                            <div class="wedding-page-text-left-title">
-                                <h2>Where</h2>
-                                <p style="font-family: "Raleway", ans-serif;">Some place, an address</p>
-                                <p>Some where, some address</p>
-                            </div>
-                        </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="invate-page">
+        <div class="invate-textbox">
+            <div class="invate-page-title">
+                <h1>You Are Invited</h1>
+            </div>
+            <div class="invate-page-text">
+                <h2>Of course..</h2>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section>
+        <div class="wedding" id="wedding">
+            <div class="wedding-page-title">
+                <h2>THE WEDDING</h2>
+            </div>
+            <div class="wedding-page-img">
+                <img src="IMG/4.jpg">
+            </div>
+
+            <div class="wedding-page-text">
+                <div class="wedding-page-text-left">
+                    <div class="wedding-page-text-left-title">
+                        <h2>When</h2>
+                        <p>Wedding Ceremony - 2:00pm</p>
+                        <p>Reception & Dinner - 5:00pm</p>
                     </div>
-            </div>
-        </section>
-        <!--  -->
-        <section class="page-bottom" id="RSVP">
-            <div class="page-bottom-textbox">
-                <div class="page-bottom-textbox-title" id="rsvp">
-                    <h2>HOPE YOU CAN MAKE IT!</h2>
                 </div>
-                <p>Kindly Respond By January, 2017</p>
-                <div class="page-bottom-button">
-                    <a href="#wedding" class="button">RSVP</a>
+                <div class="wedding-page-text-right">
+                    <div class="wedding-page-text-left-title">
+                        <h2>Where</h2>
+                        <p>Some place, an address</p>
+                        <p>Some where, some address</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!--  -->
-        <footer>
-            <div class="footer-text" >
-                <p>Powered by <a href="#" title="W3.CSS">w3.css</a></p>
+        </div>
+    </section>
+    <!--  -->
+    <section class="page-bottom" id="RSVP">
+        <div class="page-bottom-textbox">
+            <div class="page-bottom-textbox-title">
+                <h2>HOPE YOU CAN MAKE IT!</h2>
             </div>
-        </footer>
-        <div class="space_bottom"></div>    
-    </container>
+            <p>Kindly Respond By January, 2017</p>
+            <div class="page-bottom-button">
+                <a href="#wedding" class="button">RSVP</a>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <footer>
+        <div class="footer-text">
+            <p>Powered by <a href="#" title="W3.CSS">w3.css</a></p>
+        </div>
+    </footer>
+    <div class="space_bottom"></div>
+</div>
 </body>
 </html>
