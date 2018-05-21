@@ -2,6 +2,46 @@
 <html>
 
 <head>
+    <script>
+/* START top nav social button*/        
+function link_hover(element) {
+  element.setAttribute('src', 'css/icon/linkeind-active.png');
+}
+function link_unhover(element) {
+  element.setAttribute('src', 'css/icon/linkeind.png');
+}
+        
+function twitt_hover(element) {
+  element.setAttribute('src', 'css/icon/twitter-active.png');
+}
+function twitt_unhover(element) {
+  element.setAttribute('src', 'css/icon/twitter.png');
+}
+        
+function googlep_hover(element) {
+  element.setAttribute('src', 'css/icon/google-p-active.png');
+}
+function googlep_unhover(element) {
+  element.setAttribute('src', 'css/icon/google-p.png');
+}
+        
+function pint_hover(element) {
+  element.setAttribute('src', 'css/icon/pinterest-active.png');
+}
+function pint_unhover(element) {
+  element.setAttribute('src', 'css/icon/pinterest.png');
+}
+        
+function rss_hover(element) {
+  element.setAttribute('src', 'css/icon/rss-active.png');
+}
+
+function rss_unhover(element) {
+  element.setAttribute('src', 'css/icon/rss.png');
+}
+/*END top nav social button*/      
+        
+    </script>
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -12,13 +52,12 @@
 <div class="container">
     <div class="top-nav">
             <div class="social">
-                <ul>
-                    <li><a href="#" class="linked-button"></a></li>
-                     <li><a href="#" class="twitter-button"></a></li>
-                     <li><a href="#" class="google-p-button"></a></li>
-                     <li><a href="#" class="pinterest-button"></a></li>
-                     <li><a href="#" class="rss-button"></a></li>
-                </ul> 
+                <a href="#"><img border="0" id="linkedin" alt="linkedin" src="css/icon/linkeind.png" onmouseover="link_hover(this);" onmouseout="link_unhover(this);"></a>
+                <a href="#"><img border="0" alt="twitter" alt="twitter" src="css/icon/twitter.png" onmouseover="twitt_hover(this);" onmouseout="twitt_unhover(this);"></a>
+                <a href="#"><img border="0" alt="googe plus" src="css/icon/google-p.png" onmouseover="googlep_hover(this);" onmouseout="googlep_unhover(this);"></a>
+                <a href="#"><img border="0" alt="pinterest" src="css/icon/pinterest.png" onmouseover="pint_hover(this);" onmouseout="pint_unhover(this);"></a>
+                <a href="#"><img border="0" alt="rss" src="css/icon/rss.png" 
+                                 onmouseover="rss_hover(this);" onmouseout="rss_unhover(this);"></a>     
             </div>              
         <nav>
             <ul>
