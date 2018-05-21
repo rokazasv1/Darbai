@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/1 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1 darbas/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2 darbas/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3 darbas/3 darbas.html" beforeDir="false" afterPath="$PROJECT_DIR$/3 darbas/3 darbas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4 darbas/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,22 +22,48 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3 darbas.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1 darbas/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="38" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3 darbas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="213">
+              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="374" column="18" selection-start-line="374" selection-start-column="18" selection-end-line="374" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>h2</find>
+      <find>jane-page-text</find>
+      <find>.invate-textbox</find>
+      <find>rsvp</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,9 +71,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1 darbas/index.html" />
         <option value="$PROJECT_DIR$/2 darbas/index.html" />
+        <option value="$PROJECT_DIR$/1 darbas/index.html" />
         <option value="$PROJECT_DIR$/3 darbas/3 darbas.html" />
+        <option value="$PROJECT_DIR$/4 darbas/index.html" />
       </list>
     </option>
   </component>
@@ -60,8 +88,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="183" />
-    <option name="y" value="234" />
+    <option name="x" value="308" />
+    <option name="y" value="36" />
     <option name="width" value="1352" />
     <option name="height" value="682" />
   </component>
@@ -92,6 +120,11 @@
               <item name="Darbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="Darbs" type="462c0819:PsiDirectoryNode" />
               <item name="3 darbas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Darbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Darbs" type="462c0819:PsiDirectoryNode" />
+              <item name="4 darbas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -131,21 +164,22 @@
       <option name="presentableId" value="Default" />
       <updated>1526023212009</updated>
       <workItem from="1526023213668" duration="630000" />
-      <workItem from="1526925515382" duration="665000" />
+      <workItem from="1526925515382" duration="8980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1295000" />
+    <option name="totallyTimeSpent" value="9610000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="234" width="1352" height="682" extended-state="0" />
+    <frame x="534" y="74" width="1352" height="682" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.248503" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329806" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -156,7 +190,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -168,24 +201,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1 darbas/index.html">
+    <entry file="file://$PROJECT_DIR$/2 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2 darbas/index.html">
+    <entry file="file://$PROJECT_DIR$/1 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="357">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="38" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="213">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="374" column="18" selection-start-line="374" selection-start-column="18" selection-end-line="374" selection-end-column="18" />
         </state>
       </provider>
     </entry>

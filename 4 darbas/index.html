@@ -3,15 +3,20 @@
 <style>
     * {
         margin: 0;
+        padding: 0;
     }
 
     h1, h2, h3, h4, h5 {
         font-family: "Raleway", sans-serif;
-
         line-height: 1.5;
         display: block;
         font-weight: 200;
         letter-spacing: 5px;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+        text-align: center;
+
     }
 
     h1, .invate-page-title {
@@ -20,6 +25,10 @@
 
     h2 {
         font-size: 30px;
+    }
+
+    h3 {
+        font-size: 35px;
     }
 
     a {
@@ -31,20 +40,31 @@
         font-size: 15px;
         line-height: 1.5;
     }
-    body,html{
+
+    body, html {
         height: 100%;
-    }
-    header {
-        background-image: url(IMG/1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        filter: grayscale(50%);
     }
 
-    header .text-box {
-        padding-top: 170px;
+    .container {
+        height: 100%;
+    }
+
+    header {
+        background: url(IMG/1.jpg) no-repeat center;
+        background-size: cover;
+        filter: grayscale(50%);
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+    }
+
+    header .text-box, .invate-page .invate-textbox {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
         color: white;
     }
 
@@ -58,18 +78,20 @@
         padding: 12px 15px;
         text-align: center;
         font-size: 24px;
-        z-index: 1;
-
     }
 
     nav a {
         float: left;
-        padding: 8px 0px;
+        padding: 8px 0;
         color: black;
         text-align: center;
         width: 24.4%;
         text-decoration: none;
         font-size: 17px;
+    }
+
+    nav ul {
+        list-style: none;
     }
 
     nav:hover {
@@ -90,38 +112,54 @@
     section {
         color: #000;
         background-color: #f2e1e1;
-        padding-top: 70px;
-        padding-bottom: 20px;
-        text-align: center;
+        overflow: hidden;
+    }
+
+    section img {
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+        text-align: justify;
+        line-height: 2;
+        margin-bottom: 10px;
+        font-style: italic;
+        max-width: 1700px;
+        filter: grayscale(75%);
+        border-radius: 5px;
+        width: 90%;
+    }
+
+    section h3 {
+        padding: 40px;
+    }
+
+    /*  section 1  */
+
+    .janes-page {
+        padding-bottom: 70px;
     }
 
     .jane-page-title, .wedding-page-title {
         color: #757575;
     }
 
-    .jane-page-title, .wedding-page-title {
-        margin-bottom: 35px;
-    }
-
-    .jane-page-img img, .jane-page-text, .wedding-page-img img, .wedding-page-text {
-        max-width: 900px;
-        margin: 0 auto;
+    .jane-page-text, .wedding-page-text {
         filter: grayscale(75%);
         border-radius: 5px;
-        width: 90%;
-    }
-
-    .jane-page-text {
-        margin-top: 40px;
-        text-align: left;
+        width: 89%;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+        text-align: justify;
         line-height: 2;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-style: italic;
     }
 
     .janes-page-button {
-        padding-top: 40px;
-        padding-bottom: 80px;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
     }
 
     .janes-page-button .button {
@@ -130,6 +168,7 @@
         padding: 20px 30px;
         font-size: 18px;
         border-radius: 6px;
+        position: relative;
     }
 
     .janes-page-button .button:hover, .page-bottom .button:hover {
@@ -137,49 +176,53 @@
         background-color: #ccc;
     }
 
+    /*  section 2  */
+
     .invate-page {
-        background-image: url(IMG/3.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
+        background: url(IMG/3.jpg) no-repeat center;
         background-size: cover;
-        min-height: 100%;
-        text-align: center;
-        height: 600px;
+        height: 100%;
     }
 
-    .invate-textbox {
-        color: white;
-        margin-top: 150px;
-    }
+    /*  section 3 */
 
     .wedding-page-title {
         text-transform: uppercase;
     }
 
-    .wedding-page-img {
-        filter: grayscale(70%);
+    .wedding-page-text {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 90%;
+        text-align: center;
     }
 
-    .wedding-page-text {
-        display: inline-block;
-        margin-top: 40px;
+    .wedding-page-text h3 {
+        padding: 10px;
+    }
+
+    .wedding-page-text p {
+        padding-bottom: 10px;
     }
 
     .wedding-page-text-left {
         float: left;
-        width: 45%;
-        padding-right: 1%;
+        width: 50%;
     }
 
     .wedding-page-text-right {
         float: right;
-        width: 45%;
-        padding-left: 1%;
+        width: 50%;
+
     }
 
     .page-bottom {
         background-color: #ffdddd;
         letter-spacing: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+        text-align: center;
     }
 
     .page-bottom p {
@@ -200,15 +243,18 @@
         font-size: 18px;
         border-radius: 6px;
         box-shadow: none;
-
     }
 
-    .footer-text {
+    .footer-text p {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
         background-color: black;
         color: white;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+
     }
 
     .footer-text a {
@@ -253,7 +299,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#jane">Jane & John</a></li>
             <li><a href="#wedding">Wedding</a></li>
-            <li><a href="#rsvp" class="black-box">RSVP</a></li>
+            <li><a href="#rsvp1" class="black-box">RSVP</a></li>
 
         </ul>
     </nav>
@@ -261,7 +307,7 @@
     <section id="jane">
         <div class="janes-page">
             <div class="jane-page-title">
-                <h2>Jane & John</h2>
+                <h3>Jane & John</h3>
             </div>
             <div class="jane-page-img">
                 <img src="IMG/2.jpg">
@@ -289,7 +335,7 @@
                 <h1>You Are Invited</h1>
             </div>
             <div class="invate-page-text">
-                <h2>Of course..</h2>
+                <h3>Of course..</h3>
             </div>
         </div>
     </section>
@@ -297,7 +343,7 @@
     <section>
         <div class="wedding" id="wedding">
             <div class="wedding-page-title">
-                <h2>THE WEDDING</h2>
+                <h3>THE WEDDING</h3>
             </div>
             <div class="wedding-page-img">
                 <img src="IMG/4.jpg">
@@ -306,14 +352,14 @@
             <div class="wedding-page-text">
                 <div class="wedding-page-text-left">
                     <div class="wedding-page-text-left-title">
-                        <h2>When</h2>
+                        <h3>When</h3>
                         <p>Wedding Ceremony - 2:00pm</p>
                         <p>Reception & Dinner - 5:00pm</p>
                     </div>
                 </div>
                 <div class="wedding-page-text-right">
                     <div class="wedding-page-text-left-title">
-                        <h2>Where</h2>
+                        <h3>Where</h3>
                         <p>Some place, an address</p>
                         <p>Some where, some address</p>
                     </div>
@@ -322,10 +368,10 @@
         </div>
     </section>
     <!--  -->
-    <section class="page-bottom" id="RSVP">
+    <section class="page-bottom" id="rsvp1">
         <div class="page-bottom-textbox">
             <div class="page-bottom-textbox-title">
-                <h2>HOPE YOU CAN MAKE IT!</h2>
+                <h3>HOPE YOU CAN MAKE IT!</h3>
             </div>
             <p>Kindly Respond By January, 2017</p>
             <div class="page-bottom-button">
