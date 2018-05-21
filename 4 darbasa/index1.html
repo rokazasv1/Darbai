@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        font-family: "Raleway", sans-serif;
+        margin: 0px auto;
+        width: auto;
+        margin-bottom: 52px;
+    }
+    a{
+        text-decoration: none;
+    }
+    header, 
+    .invited-page 
+     {
+        background-image: url(IMG/1.jpg);
+        min-height: 100%;
+        height: 667px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(50%);
+    }
+    
+    section{
+        padding: 40px 0px 60px 0px;
+        text-align: center;
+    }
+/* Start header text*/
+    .main-text{
+        
+        margin-top: -40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+           
+    }
+    .main-text .title{
+        font-size: 64px;
+        color: white;
+        font-weight:100;
+        letter-spacing: 10px;
+        
+    }
+    .main-text .title2, 
+    .main-text .title-date{
+        margin-top: 20px;
+        font-size: 26px;
+        color: white;
+        letter-spacing: 5px;
+        line-height: 40px;
+        
+        
+        
+    }           
+    .main-text .title-date{
+        margin-top: 20px;
+        letter-spacing:3px;
+        font-weight: bolder;
+        
+    }
+/* End header text*/
+/* Start Navigation */
+    .navbar {
+        font-family: Verdana,sans-serif;
+        background-color: rgb(255, 255, 255, 0.7);
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 8px 16px;
+        z-index: 1;
+        
+    }
+    .navbar a {
+        float: left;
+        padding: 8px 0px;
+        color: black;
+        text-align: center;
+        width: 25%;
+        text-decoration: none;
+        font-size: 17px;
+        
+    }   
+    .navbar:hover {
+        background-color:  white;
+        color: black;
+        
+        }
+    .navbar a:hover {
+        background-color:  #ccc;
+        color: black;
+        }   
+    .navbar .actives:hover {
+    color: #fff!important;
+    background-color: #000!important;
+    }
+/* End Navigation */
+    .janes-page,
+    .wedding-page {
+        color: #000;
+        background-color: #ffdddd;
+         filter: grayscale(45%);
+    }
+    .janes-page-title, 
+    .wedding-page-title,
+    .side-left-title{
+        font-size: 32px;
+        color: grey;
+        margin-bottom: 20px;
+        
+    }
+    .janes-page-img img, 
+    .wedding-page-img img
+    {
+        filter: grayscale(45%);
+        border-radius: 5px;   
+        width: 75%;
+    }
+    .janes-page-text{
+        font-style: italic;
+        font-size: 15px;
+        margin-left: 12.5%;
+        width: 75.5%;
+        line-height: 2;  
+        text-align: left;
+        color: black;
+        margin-top: 50px;
+        
+    }
+    .janes-page-button{
+        padding: 40px 0px 0px 0px;
+ 
+    }
+    .janes-page-button .button{
+        color: #fff;
+        background: black;
+        padding: 20px 30px;
+        font-size: 18px;
+        border-radius: 6px;
+        box-shadow: 0px;
+        
+    }
+    .janes-page-button .button:hover {
+        color: #000;
+        background-color: #ccc;
+       
+    }
+    .invited-page{
+        background-image: url(IMG/3.jpg);
+        text-align: center;
+       filter: none;
+        height: 500px;
+    }
+    .invited-page-textbox{
+        margin-top: 200px;
+        margin-left: 10%;
+        width: 80%;
+        
+    }
+    .invited-page-text-big{
+        font-size: 64px;
+        color: white;
+        font-weight:100;
+        margin-bottom: 30px;
+        
+    }
+    .invited-page-text-small{
+        font-size: 30px;
+        color: white;
+        font-weight:100;
+       
+    }
+    
+    .wedding-page-title{
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        
+    }
+    .sides{
+        float: left;
+        display: block;
+        margin-left: 12.5%;
+        width: 75.5%;
+        padding-top: 50px;
+        
+    }
+    .sides .side-left{
+        width: 49%;
+        border: 1px solid red;
+        display: inline-block;
+    }   
+    .sides .side-right{
+        width: 49%;
+        float: left;
+        border: 1px solid;
+    }
+    
+    .clearfix {
+        overflow: auto;
+    }
+</style>
+<head>
+<title>4 uzduotis</title>
+</head>
+<body>
+   
+    <header id="home">
+        <div class="main-text">
+            <div class="title">Jane & John</div>
+            <div class="title2">Are getting married</div>
+            <div class="title-date">17.07.2017</div>
+        </div>
+    </header>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#janes">Jane & John</a>
+        <a href="#wedding">Wedding</a>
+        <a href="#" class="actives">RSVP</a>
+    </div>
+   
+    
+    <section class="janes-page" id="janes">
+        <div class="janes-page-title">
+            Jane & John
+        </div>
+        <div class="janes-page-img">
+            <img src="IMG/2.jpg">
+        </div>
+            <div class="janes-page-text">
+                <p>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+   
+            <div class="janes-page-button">
+                <a href="#wedding" class="button">Wedding Details</a>
+            </div>  
+    </section>
+    
+    
+    <section class="invited-page" id="invited">
+        <div class="invited-page-textbox">
+            <div class="invited-page-text-big">
+                You Are Invited
+            </div>
+            <div class="invited-page-text-small">
+                Of course..
+            </div>
+        </div>    
+    </section>
+    
+    
+    <section class="wedding-page" id="wedding">
+        <div class="wedding-page-title">
+            the Wedding
+        </div>
+        <div class="wedding-page-img">
+             <img src="IMG/4.jpg">
+        </div>
+        <div class="sides">
+           
+            <div class="side-left">
+                <div class="side-right-title">Where</div>
+                <p>
+                Some place, an address<br>
+                Some where, some address
+                </p>
+            </div>
+            <div class="side-right">
+                <div class="side-left-title">When</div>
+                <p>
+                Wedding Ceremony - 2:00pm<br>
+                Reception & Dinner - 5:00pm
+                </p>
+            </div>
+        </div>
+       
+    </section>
+</body>
+</html>
