@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d58f1c-8861-48cd-9b6d-5b333950b1b9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/5 darbas/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,20 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
+            <state relative-caret-position="859">
               <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aaa.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aaa.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5 darbas/aaa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
-              <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
+            <state relative-caret-position="814">
+              <caret line="540" column="7" selection-end-line="540" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -107,8 +106,8 @@
         <option value="$PROJECT_DIR$/5 darbas/index2.html" />
         <option value="$PROJECT_DIR$/5 darbas/css/style.css" />
         <option value="$PROJECT_DIR$/5 darbas/index1.html" />
-        <option value="$PROJECT_DIR$/5 darbas/index.html" />
         <option value="$PROJECT_DIR$/5 darbas/aaa.html" />
+        <option value="$PROJECT_DIR$/5 darbas/index.html" />
       </list>
     </option>
   </component>
@@ -218,12 +217,12 @@
       <workItem from="1527059507447" duration="3407000" />
       <workItem from="1527074453510" duration="9425000" />
       <workItem from="1527084899903" duration="579000" />
-      <workItem from="1527096887673" duration="85000" />
+      <workItem from="1527096887673" duration="140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36650000" />
+    <option name="totallyTimeSpent" value="36705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -466,16 +465,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
+    <entry file="file://$PROJECT_DIR$/5 darbas/aaa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
+        <state relative-caret-position="814">
+          <caret line="540" column="7" selection-end-line="540" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5 darbas/aaa.html">
+    <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
+        <state relative-caret-position="859">
           <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
         </state>
       </provider>
