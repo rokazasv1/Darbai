@@ -1,12 +1,488 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
+    body, html {
+        font-family: "Georgia", Times, serif;
+        background: #282828;
+        width: 1000px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 100%;
+    }
+
+    /*GLOBAL*/
+    .simple-line-light {
+        height: 5px;
+        background: #e9e9e9;
+        padding: 0;
+    }
+
+    #container {
+
+        box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.4);
+        width: 100%;
+    }
+
+    /*TOP NAV SOCIAL BUTTONS*/
+    .linked-button {
+        background-image: url(css/icon/linkeind.png);
+    }
+
+    .linked-button:hover {
+        background-image: url(css/icon/linkeind-active.png);
+    }
+
+    .twitter-button {
+        background-image: url(css/icon/twitter.png);
+    }
+
+    .twitter-button:hover {
+        background-image: url(css/icon/twitter-active.png);
+    }
+
+    .google-p-button {
+        background-image: url(css/icon/google-p.png);
+    }
+
+    .google-p-button:hover {
+        background-image: url(css/icon/google-p-active.png);
+    }
+
+    .pinterest-button {
+        background-image: url(css/icon/pinterest.png);
+    }
+
+    .pinterest-button:hover {
+        background-image: url(css/icon/pinterest-active.png);
+    }
+
+    .rss-button {
+        background-image: url(css/icon/rss.png);
+    }
+
+    .rss-button:hover {
+        background-image: url(css/icon/rss-active.png);
+    }
+
+    /*------------------------------------------------------------*/
+
+    #container .simple-line-light {
+        height: 5px;
+        background: #e9e9e9;
+    }
+
+    /*SIDES PADINGS*/
+    #container .top-nav, #container .main-nav, #container #slideshow, #container #responsive {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*TOP NAV */
+    #container .top-nav {
+        height: 60px;
+        background: #2e2e2e;
+    }
+
+    #container .top-nav nav {
+        position: relative;
+        float: left;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    #container .top-nav nav ul {
+        list-style: none;
+        display: inline-block;
+    }
+
+    #container .top-nav nav ul li {
+        float: left;
+        color: white;
+    }
+
+    #container .top-nav nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        padding: 0 5px 0 5px;
+        border-right: 1px solid white;
+    }
+
+    #container .top-nav nav ul:last-child li:last-child a {
+        border: none;
+    }
+
+    #container .top-nav nav ul li a:hover {
+        color: #0099ff;
+
+    }
+
+    /*TOP NAV SOCIAL*/
+    #container .top-nav .social {
+        position: relative;
+        float: right;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    #container .top-nav .social ul {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #container .top-nav .social ul li {
+        float: right;
+    }
+
+    #container .top-nav .social ul li a {
+        display: block;
+        color: white;
+        margin-top: 10px;
+        padding: 20px;
+        background-repeat: no-repeat;
+    }
+
+    /*-------------------------------------------------------*/
+    #container .main-nav {
+        background: white;
+    }
+
+    /*TOGGLE BUTTON ON TOP*/
+    #container .main-nav .toogle-button {
+        position: relative;
+        clear: both;
+        float: right;
+        padding: 15px;
+        border: none;
+        background-image: url("css/icon/minus.png");
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+
+    #container .main-nav .toogle-button:focus {
+        outline-style: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
+
+    #container .main-nav .toogle-button:hover {
+        background-image: url("css/icon/minus - active.png");
+    }
+
+    /*---------------------------------------------------*/
+    /*MAIN NAVIGATION AFTE TOP NAV*/
+    #container .main-nav {
+        background: white;
+    }
+
+    #container .main-nav ul {
+        clear: both;
+        list-style: none;
+    }
+
+    #container .main-nav ul li {
+        position: relative;
+        float: left;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #container .main-nav ul li a {
+        text-decoration: none;
+        color: #2e2e2e;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    #container .main-nav ul li a:hover {
+        padding-bottom: 17.5px;
+        border-bottom: 5px solid #0099ff;
+        margin-right: 20px;
+    }
+
+    #container .main-nav-bottom-line {
+        height: 5px;
+        background-color: #f1f1f1;
+        margin-top: 26px;
+    }
+
+    /*WEBSITE NAME SEARCH*/
+    #container .logo {
+        height: 200px;
+    }
+
+    #container .logo .search-box {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        float: right;
+    }
+
+    #container .logo .search-box .search-box-input {
+        border-radius: 5px;
+        border: none;
+        width: 215px;
+        background: #f1f1f1;
+        height: 31px;
+        padding-left: 7px;
+        margin-right: 5px;
+    }
+
+    #container .logo .search-box .search-box-btn {
+        background: #0099ff;
+        height: 31px;
+        width: 80px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    #container .logo .web-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        float: left;
+    }
+
+    #container .logo .web-container .web-logo-title h1 {
+        font-size: 36px;
+        font-weight: normal;
+        color: #333333;
+    }
+
+    #container .logo .web-container .web-logo-title p {
+        font-size: 12px;
+        color: #999999;
+    }
+
+    /*---------------------------------------------------------*/
+    #container #slideshow {
+        position: relative;
+        overflow: hidden;
+        padding-top: 5px;
+
+        background: #f1f1f1;
+
+    }
+
+    #container #slideshow .left {
+        float: left;
+        width: 40%;
+    }
+
+    #container #slideshow .left .content {
+        display: block;
+        transform: translateY(50%);
+    }
+
+    #container #slideshow .left h2 {
+        font-size: 36px;
+        color: #333333;
+        letter-spacing: -2px;
+    }
+
+    #container #slideshow .right {
+        float: right;
+    }
+
+    #container #slideshow p {
+        color: #666666;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    #container #slideshow .slideshow-box-btn {
+        background: #0099ff;
+        height: 30px;
+        width: 110px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    #container #slideshow .right .img-btns {
+        position: absolute;
+    }
+
+    #container #slideshow .right .dot {
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 410px;
+    }
+
+    #container #slideshow .right .dot:hover {
+        background-color: transparent;
+        border: 2px solid black;
+    }
+
+    #container #responsive {
+        background: white;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+
+    #container #responsive .left {
+        float: left;
+    }
+
+    #container #responsive .right {
+        float: right;
+        width: 50%;
+    }
+
+    #container #responsive .right .column {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #container #responsive .right .column .text {
+        color: #0099ff;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    #container #responsive .right .column .descp {
+        color: #666666;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    #container #responsive .adds-container {
+        border-left: 10px solid #0099ff;
+        clear: both;
+        padding-left: 20px;
+        padding-bottom: 40px;
+        background: #e0e0e0;
+        height: 60px;
+        position: relative;
+    }
+
+    #container #responsive .adds-container .adds-text-box {
+        color: #333;
+        float: left;
+        border: 1px solid;
+    }
+
+    #container #responsive .adds-container .adds-title {
+        font-size: 36px;
+    }
+
+    #container #responsive .adds-container .adds-btn {
+        float: left;
+        padding-left: 80px;
+    }
+
+    #container #responsive .adds-container .adds-input-btn {
+        color: #e6e6e6;
+        background: #0099ff;
+        border-radius: 5px;
+        border: none;
+        height: 60px;
+        text-align: center;
+        font-size: 26px;
+    }
+</style>
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <title>5 uzduotis</title>
+
+    <meta charset="UTF-8">
+    <title>Darbas 5</title>
 </head>
 <body>
+<<<<<<< HEAD
+<div id="container">
+    <div class="top-nav">
+        <div class="social">
+            <ul>
+
+                <li><a href="#" class="rss-button"></a></li>
+                <li><a href="#" class="pinterest-button"></a></li>
+                <li><a href="#" class="google-p-button"></a></li>
+                <li><a href="#" class="twitter-button"></a></li>
+                <li><a href="#" class="linked-button"></a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">RSS Feeds</a></li>
+                <li><a href="#">Archived News</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-nav">
+        <input type="button" class="toogle-button">
+        <nav>
+            <ul>
+                <li><a href="#">homepage</a></li>
+                <li><a href="#">style demo</a></li>
+                <li><a href="#">full width</a></li>
+                <li><a href="#">dropdown</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">porfolio</a></li>
+                <li><a href="#">link text</a></li>
+                <li><a href="#">long link text</a></li>
+            </ul>
+        </nav>
+        <div class="main-nav-bottom-line"></div>
+        <div class="logo">
+            <div class="search-box">
+                <input type="text" class="search-box-input" placeholder="Search Our Website...">
+                <input type="button" class="search-box-btn" value="SEARCH">
+            </div>
+            <div class="web-container">
+                <div class="web-logo-title">
+                    <h1>NobodysFool</h1>
+                    <p> Free PSD Website Template</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="simple-line-light"></div>
+    <section id="slideshow">
+        <div class="left">
+            <div class="content">
+                <h2>Your title can be long and descriptive</h2>
+                <p>Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis
+                    orccoli
+                    congue elis et curabitur.</p>
+                <input type="button" class="slideshow-box-btn" value="READ MORE »">
+            </div>
+        </div>
+        <div class="right">
+            <div class="img-btns">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+=======
 <div class="container">
     <div class="padding">
         <div class="top-nav">
@@ -56,8 +532,63 @@
                     <h1>NobodysFool</h1>
                     <p> Free PSD Website Template</p>
                 </div>
+>>>>>>> 5666be3cc38c219c95a67d9c72949bdc15406b0e
+            </div>
+            <img src="img/550x440.png">
+        </div>
+<<<<<<< HEAD
+
+    </section>
+    <div class="simple-line-light"></div>
+    <section id="responsive">
+        <div class="left">
+            <img src="img/responsive-display.png">
+        </div>
+        <!-- FIRST ROW OF COLLUMS-->
+        <div class="right">
+            <div class="column">
+                <div class="image"><img src="img/85x80.png"></div>
+                <div class="text">Vivamuslibero Augue</div>
+                <div class="descp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa
+                    ut nisi ullamcorper pellentesque.
+                </div>
+            </div>
+            <div class="column">
+                <div class="image"><img src="img/85x80.png"></div>
+                <div class="text">Vivamuslibero Augue</div>
+                <div class="descp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa
+                    ut nisi ullamcorper pellentesque.
+                </div>
             </div>
         </div>
+        <!-- SECOND ROW OF COLLUMS-->
+        <div class="right">
+            <div class="column">
+                <div class="image"><img src="img/85x80.png"></div>
+                <div class="text">Vivamuslibero Augue</div>
+                <div class="descp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa
+                    ut nisi ullamcorper pellentesque.
+                </div>
+            </div>
+            <div class="column">
+                <div class="image"><img src="img/85x80.png"></div>
+                <div class="text">Vivamuslibero Augue</div>
+                <div class="descp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa
+                    ut nisi ullamcorper pellentesque.
+                </div>
+            </div>
+        </div>
+        <div class="adds-container">
+            <div class="adds-text-box">
+                <div class="adds-title">Lorem ipsum dolor sit amet elit !</div>
+                <div class="adds-bottom-title">Why not try our services today, you won’t regret your choice !</div>
+            </div>
+            <div class="adds-btn" style=""><input type="button" value="CONTACT US TODAY" class="adds-input-btn">
+=======
         <section class="slideshow">
             <div class="simple-line-light"></div>
             <div class="slideshow-left">
@@ -212,10 +743,11 @@
                  style="color: #666666;margin-top: 20px; padding-left: 20px; padding-right: 20px">
                 <div class="left" style="float: left">Copyright © 2013 Domain Name - All Rights Reserved</div>
                 <div class="right" style="float: right">Template by OS Templates</div>
+>>>>>>> 5666be3cc38c219c95a67d9c72949bdc15406b0e
             </div>
         </div>
-    </div>
+    </section>
 </div>
-
+</div>
 </body>
 </html>
