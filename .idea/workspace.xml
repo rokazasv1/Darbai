@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d58f1c-8861-48cd-9b6d-5b333950b1b9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/5 darbas/css/icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5 darbas/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/5 darbas/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/5 darbas/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5 darbas/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/5 darbas/index1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5 darbas/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/5 darbas/scss/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5 darbas/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6963">
-              <caret line="752" column="24" selection-start-line="752" selection-start-column="24" selection-end-line="752" selection-end-column="24" />
+            <state relative-caret-position="6222">
+              <caret line="366" column="24" selection-start-line="366" selection-start-column="24" selection-end-line="366" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -32,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1796">
+            <state relative-caret-position="1003">
               <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
             </state>
           </provider>
@@ -41,17 +38,26 @@
       <file leaf-file-name="3 darbas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="1309">
               <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13168">
-              <caret line="1142" column="26" selection-start-line="1142" selection-start-column="26" selection-end-line="1142" selection-end-column="26" />
+            <state relative-caret-position="791">
+              <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aaa.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/5 darbas/aaa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="791">
+              <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -59,8 +65,8 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5 darbas/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="126" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="2125">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
             </state>
           </provider>
         </entry>
@@ -102,6 +108,7 @@
         <option value="$PROJECT_DIR$/5 darbas/css/style.css" />
         <option value="$PROJECT_DIR$/5 darbas/index1.html" />
         <option value="$PROJECT_DIR$/5 darbas/index.html" />
+        <option value="$PROJECT_DIR$/5 darbas/aaa.html" />
       </list>
     </option>
   </component>
@@ -114,7 +121,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="534" />
     <option name="y" value="47" />
     <option name="width" value="1352" />
@@ -128,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +177,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,16 +217,19 @@
       <workItem from="1527009845845" duration="13306000" />
       <workItem from="1527059507447" duration="3407000" />
       <workItem from="1527074453510" duration="9425000" />
+      <workItem from="1527084899903" duration="579000" />
+      <workItem from="1527096887673" duration="85000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35986000" />
+    <option name="totallyTimeSpent" value="36650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="534" y="47" width="1352" height="681" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.248503" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2484375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -245,6 +255,76 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/5 darbas/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6222">
+          <caret line="366" column="24" selection-start-line="366" selection-start-column="24" selection-end-line="366" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9384">
+          <caret line="552" selection-start-line="552" selection-end-line="564" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12784">
+          <caret line="752" column="24" selection-start-line="752" selection-start-column="24" selection-end-line="752" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19414">
+          <caret line="1142" column="26" selection-start-line="1142" selection-start-column="26" selection-end-line="1142" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/5 darbas/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2856">
@@ -360,36 +440,43 @@
     <entry file="file://$PROJECT_DIR$/5 darbas/index2.html" />
     <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1796">
+        <state relative-caret-position="1003">
           <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5 darbas/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6963">
-          <caret line="752" column="24" selection-start-line="752" selection-start-column="24" selection-end-line="752" selection-end-column="24" />
+        <state relative-caret-position="6222">
+          <caret line="366" column="24" selection-start-line="366" selection-start-column="24" selection-end-line="366" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="1309">
           <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5 darbas/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="2125">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13168">
-          <caret line="1142" column="26" selection-start-line="1142" selection-start-column="26" selection-end-line="1142" selection-end-column="26" />
+        <state relative-caret-position="791">
+          <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5 darbas/aaa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="540" column="7" selection-start-line="540" selection-start-column="7" selection-end-line="540" selection-end-column="7" />
         </state>
       </provider>
     </entry>
