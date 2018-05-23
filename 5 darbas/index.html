@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    /*GLOBAL*/
     * {
         margin: 0;
         padding: 0;
@@ -14,22 +15,40 @@
         left: 50%;
         transform: translate(-50%);
         margin-top: 10px;
-        margin-bottom: 10px;
+
         height: 100%;
     }
 
-    /*GLOBAL*/
+
     .simple-line-light {
         height: 5px;
         background: #e9e9e9;
         padding: 0;
     }
 
+    .simple-line-dark {
+        height: 5px;
+        background: black;
+    }
+
+    .simple-line-light-small {
+        height: 1px;
+        background: #2d2d2d;
+    }
+
+    .white {
+        color: white;
+        float: left;
+        padding-right: 5px;
+    }
+
     #container {
 
         box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.4);
         width: 100%;
+
     }
+    /*--------------------------------------------------------*/
 
     /*TOP NAV SOCIAL BUTTONS*/
     .linked-button {
@@ -80,7 +99,8 @@
     }
 
     /*SIDES PADINGS*/
-    #container .top-nav, #container .main-nav, #container #slideshow, #container #responsive {
+    #container .top-nav, #container .main-nav, #container #slideshow, #container #responsive, footer,
+    #container .copyrights {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -123,7 +143,6 @@
 
     #container .top-nav nav ul li a:hover {
         color: #0099ff;
-
     }
 
     /*TOP NAV SOCIAL*/
@@ -132,7 +151,6 @@
         float: right;
         top: 50%;
         transform: translateY(-50%);
-
     }
 
     #container .top-nav .social ul {
@@ -181,6 +199,7 @@
     }
 
     /*---------------------------------------------------*/
+
     /*MAIN NAVIGATION AFTE TOP NAV*/
     #container .main-nav {
         background: white;
@@ -217,7 +236,7 @@
         margin-top: 26px;
     }
 
-    /*WEBSITE NAME SEARCH*/
+    /*WEBSITE NAME, SEARCH*/
     #container .logo {
         height: 200px;
     }
@@ -270,6 +289,8 @@
     }
 
     /*---------------------------------------------------------*/
+
+    /*RESPONSIVE PHOTO PLACE 3 SECTION*/
     #container #slideshow {
         position: relative;
         overflow: hidden;
@@ -377,16 +398,18 @@
         border-left: 10px solid #0099ff;
         clear: both;
         padding-left: 20px;
-        padding-bottom: 40px;
         background: #e0e0e0;
-        height: 60px;
-        position: relative;
+        height: 100px;
+        margin-bottom: 20px;
     }
 
+    /*RESPONSIVE PHOTO PLACE ADDS*/
     #container #responsive .adds-container .adds-text-box {
         color: #333;
         float: left;
-        border: 1px solid;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     #container #responsive .adds-container .adds-title {
@@ -396,6 +419,10 @@
     #container #responsive .adds-container .adds-btn {
         float: left;
         padding-left: 80px;
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     #container #responsive .adds-container .adds-input-btn {
@@ -404,9 +431,145 @@
         border-radius: 5px;
         border: none;
         height: 60px;
+        width: 290px;
         text-align: center;
         font-size: 26px;
     }
+    /*----------------------------------------------------------------*/
+
+    #container footer {
+        background: #1a1a1a;
+        overflow: hidden;
+    }
+
+    #container footer .column-container {
+        float: left;
+        width: 24.99999%;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    #container footer .column-container .title {
+        text-align: left;
+        padding-top: 45px;
+        padding-bottom: 25px;
+        color: white;
+        text-transform: uppercase;
+
+    }
+
+    #container footer .column-container .image img {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding-bottom: 20px;
+    }
+
+    #container footer .column-container .text, #container footer .column-container .post-title,
+    #container footer .column-container .author-detail {
+        font-size: 12px;
+        color: #666666;
+        text-align: justify;
+        padding-bottom: 10px;
+    }
+
+    #container footer .column-container .read-more {
+        padding-bottom: 45px;
+    }
+
+    #container footer .column-container .read-more a {
+        float: right;
+        padding-bottom: 45px;
+        color: #0099ff;
+        text-decoration: none;
+
+    }
+
+    #container footer .column-container .q-links ul  {
+        list-style: none;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        color: #0099ff;
+        text-decoration: none;
+        border-bottom: 1px solid #232323;
+    }
+
+    #container footer .column-container .q-links ul:last-child {
+        border-bottom: none;
+    }
+
+    #container footer .column-container .q-links ul li a {
+        list-style: none;
+        color: #0099ff;
+        text-decoration: none;
+        padding-top: 10px;
+    }
+
+    #container footer .column-container .input-container {
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    #container footer .column-container .input-container input {
+        height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        background: #232323;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    #container footer .column-container .input-container textarea {
+        width: 100%;
+        padding-left: 10px;
+        height: 110px;
+        resize: none;
+        background: #232323;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    #container footer .column-container .input-container .input-text-btn {
+        width: 75px;
+        font-size: 13px;
+        background: #0099ff;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        padding: 0;
+    }
+
+    /*COPYRIGHT*/
+    #container .copyrights {
+        height: 60px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    #container .copyrights-text-container {
+        background: #222222;
+        color: #666666;
+
+    }
+
+    #container .copyrights-text-container .left {
+        float: left;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #container .copyrights-text-container .right {
+        float: right;
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translateY(-50%);
+    }
+    /*------------------------------------------------------------*/
 </style>
 <head>
 
@@ -535,7 +698,110 @@
             <div class="adds-btn" style=""><input type="button" value="CONTACT US TODAY" class="adds-input-btn"></div>
         </div>
     </section>
-
+    <div class="simple-line-dark"></div>
+    <footer>
+        <div class="column-container">
+            <div class="title">ABOUT</div>
+            <div class="image"><img src="img/215x90.png"></div>
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla
+                massa ut nisi ullamcorper pellentesque. Quisque non luctus sem. Nullam non magna vel nisi posuere
+                bibendum vitae sed dui.
+            </div>
+            <div class="read-more"><a href="#">Read more &#8811</a></div>
+        </div>
+        <div class="column-container">
+            <div class="title">QUICK LINKS</div>
+            <div class="q-links">
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Lorem ipsum dolor sit</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Amet consectetur</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Praesent vel sem id</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Curabitur hendrerit est</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Aliquam eget erat nec sapien</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Cras id augue nunc</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">In nec justo non</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Vivamus mollis enim ut</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Curabitur hendrerit est</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="white">&#8811</div>
+                        <a href="#">Sed a nulla urna</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column-container">
+            <div class="title">LATEST BLOG POSTS</div>
+            <div class="post-cont">
+                <div class="post-title">Post Title</div>
+                <div class="author-detail">Admin, domainname.com Friday, 6th April 2000</div>
+                <div class="text">
+                    Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+                </div>
+                <div class="read-more"><a href="#">Read more &#8811</a></div>
+            </div>
+            <div class="post-cont">
+                <div class="post-title">Post Title</div>
+                <div class="author-detail">Admin, domainname.com Friday, 6th April 2000</div>
+                <div class="text">
+                    Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+                </div>
+                <div class="read-more"><a href="#">Read more &#8811</a></div>
+            </div>
+        </div>
+        <div class="column-container">
+            <div class="title">CONTACT US</div>
+            <div class="input-container">
+                <input type="text" class="input-text-name" placeholder="Name">
+                <input type="email" class="input-text-email" placeholder="Email">
+                <input type="text" class="input-text-text" placeholder="Subject">
+                <textarea class="input-textarea" placeholder="Message"></textarea>
+                <input type="button" value="SUBMIT" class="input-text-btn">
+            </div>
+        </div>
+    </footer>
+    <div class="copyrights">
+        <div class="simple-line-light-small"></div>
+        <div class="copyrights-text-container">
+            <div class="left">Copyright © 2013 Domain Name - All Rights Reserved</div>
+            <div class="right">Template by OS Templates</div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
