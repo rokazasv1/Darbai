@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body, html, #container {
+            height: 100%;
+            text-transform: uppercase;
+        }
+
+        #container header {
+            background-image: url(IMG/1.JPG);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(50%);
+            color: white;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #container header .text-box {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            font-size: 24px;
+            color: white;
+        }
+
+        #container header .text-box-title {
+            font-size: 24px;
+            color: white;
+            text-align: center;
+
+        }
+
+        #container header .text-box-title .header-button {
+            background: black;
+            padding: 15px 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            width: 220px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #container header .text-box-bottom {
+            width: 280px;
+            box-sizing: border-box;
+
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 30px;
+            background: black;
+            padding: 15px 10px;
+            color: white;
+            font-size: 19px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #container nav {
+            display: block;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        #container nav ul {
+            list-style: none;
+        }
+
+        #container nav:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #container nav ul li a:hover {
+            background: silver;
+            color: white;
+        }
+
+        #container nav ul li a {
+            float: left;
+            padding: 20px 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #container .meniu {
+
+            position: relative;
+            background: black;
+            color: white;
+            text-transform: uppercase;
+            overflow: hidden;
+
+        }
+
+        #container .meniu .menu-tabs-container {
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+        }
+        .menu-text-box-title{
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <header id="home">
+        <div class="text-box">
+            <div class="text-box-title">
+                <h1>THIN <br> CRUST PIZZA</h1>
+                <a href="#menu" class="header-button">let me see the menu</a>
+            </div>
+        </div>
+        <div class="text-box-bottom">
+            open from 10am to 12PM
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section id="menu" class="meniu">
+        <div class="menu-tabs-container">
+            <div class="menu-text-box-title"><h1>THE MENU</h1></div>
+            <div class="content">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'pizza')" id="defaultOpen">PIZZA</button>
+                    <button class="tablinks" onclick="openCity(event, 'salads')">SALADS</button>
+                    <button class="tablinks" onclick="openCity(event, 'starter')">Starter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    aaa
+</div>
+</body>
+</html>

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d58f1c-8861-48cd-9b6d-5b333950b1b9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/6 darbas/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/7 darbas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/8 darbas/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +19,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-3447">
               <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
             </state>
           </provider>
@@ -30,8 +28,8 @@
       <file leaf-file-name="3 darbas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="45" />
+            <state relative-caret-position="680">
+              <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -54,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/7 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="672">
@@ -62,6 +60,24 @@
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/8 darbas/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="355" column="19" lean-forward="true" selection-start-line="355" selection-start-column="19" selection-end-line="355" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/8 darbas/index2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -88,6 +104,7 @@
       <find>adds</find>
       <find>translate</find>
       <find>footer .flex-container .input-container</find>
+      <find>text-box-title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,6 +124,8 @@
         <option value="$PROJECT_DIR$/5 darbas/index.html" />
         <option value="$PROJECT_DIR$/6 darbas/index.html" />
         <option value="$PROJECT_DIR$/7 darbas/index.html" />
+        <option value="$PROJECT_DIR$/8 darbas/index.html" />
+        <option value="$PROJECT_DIR$/8 darbas/index2.html" />
       </list>
     </option>
   </component>
@@ -182,6 +201,11 @@
               <item name="Darbs" type="462c0819:PsiDirectoryNode" />
               <item name="7 darbas" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Darbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Darbs" type="462c0819:PsiDirectoryNode" />
+              <item name="8 darbas" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,16 +251,15 @@
       <workItem from="1527074453510" duration="9425000" />
       <workItem from="1527084899903" duration="579000" />
       <workItem from="1527096887673" duration="9421000" />
-      <workItem from="1527156538411" duration="3502000" />
+      <workItem from="1527156538411" duration="8848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49488000" />
+    <option name="totallyTimeSpent" value="54834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2484375" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -443,13 +466,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5 darbas/css/style.css" />
     <entry file="file://$PROJECT_DIR$/5 darbas/index1.html" />
-    <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -457,10 +473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
+    <entry file="file://$PROJECT_DIR$/4 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="45" />
+        <state relative-caret-position="-3447">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -478,6 +494,27 @@
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8 darbas/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="355" column="19" lean-forward="true" selection-start-line="355" selection-start-column="19" selection-end-line="355" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8 darbas/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
         </state>
       </provider>
     </entry>
