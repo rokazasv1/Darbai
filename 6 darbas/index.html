@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html>
 <style>
-    h1{
+    h1 {
         font-size: 22px;
         color: silver;
         margin-bottom: 35px;
     }
+
     input {
         width: 270px;
         line-height: 2.5;
         margin-bottom: 15px;
         border-radius: 5px;
-        padding-left: 5px; 
+        padding-left: 5px;
         box-shadow: none;
         border: none;
-        
+
     }
-    textarea{
+
+    textarea {
         width: 295px;;
         border-radius: 5px;
         height: 130px;
         resize: none;
-        padding-left: 5px; 
+        padding-left: 5px;
         border: none;
     }
-    input:focus, input:focus{
-    outline: none;
+
+    input:focus, input:focus {
+        outline: none;
     }
-    .sign-up-title, h1{
+
+    .sign-up-title, h1 {
         text-align: center;
     }
-    .sign-up-form{
+
+    .sign-up-form {
         display: inline-block;
         width: 640px;
         background: #eee;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
-    .sign-up-form-left{
+
+    .sign-up-form-left {
         float: left;
-        width: 300px;   
+        width: 50%;
     }
-    .sign-up-form-right{
+
+    .sign-up-form-right {
         float: right;
-        width: 300px; 
+        width: 50%;
     }
+
     .margins-from-sides {
-        margin-right: 20px;
-         margin-left: 20px;
-       
+        box-sizing: border-box;
+        padding: 20px;
+
     }
-    .button{
+
+    .button {
         color: white;
         background: red;
         padding: 1px 30px;
@@ -58,44 +70,44 @@
         width: 100%;
     }
 
-    .sign-up-form-button{
+    .sign-up-form-button {
         display: block;
         clear: both;
     }
 </style>
 <head>
-<title>6 uzduotis</title>
+    <title>6 uzduotis</title>
 </head>
 <body>
-    <container>
-        <form action="#">
-           <div class="sign-up-form">
-               <div class="margins-from-sides">
-               <div class="sign-up-title">
-                   <h1>Elegant Contact Form</h1>
-               </div>
-               <div class="sign-up-form-left">
-                   <div class="sign-up-left-name">
-                       <input type="text" placeholder="Name" id="name" required>
-                   </div>
-                   <div class="sign-up-form-left-email">
-                       <input type="email" placeholder="Email address" id="email" required>
-                   </div>
-                   <div class="sign-up-form-left-sub">
-                       <input type="text" placeholder="Subject" id="subject" required>
-                   </div>
-               </div>
-               <div class="sign-up-form-right">
-                   <textarea placeholder="Message" id="message" required></textarea>
-               </div>
-                   <div class="sign-up-form-button">
-                        <input type="submit" value="submit" class="button">
-                   </div>
+<container>
+    <form action="#">
+        <div class="sign-up-form">
+            <div class="margins-from-sides">
+                <div class="sign-up-title">
+                    <h1>Elegant Contact Form</h1>
+                </div>
+                <div class="sign-up-form-left">
+                    <div class="sign-up-left-name">
+                        <input type="text" placeholder="Name" id="name" required>
+                    </div>
+                    <div class="sign-up-form-left-email">
+                        <input type="email" placeholder="Email address" id="email" required>
+                    </div>
+                    <div class="sign-up-form-left-sub">
+                        <input type="text" placeholder="Subject" id="subject" required>
+                    </div>
+                </div>
+                <div class="sign-up-form-right">
+                    <textarea placeholder="Message" id="message" required></textarea>
+                </div>
+                <div class="sign-up-form-button">
+                    <input type="submit" value="submit" class="button">
+                </div>
 
-               </div>
+            </div>
 
-           </div>
-        </form>
-    </container>
+        </div>
+    </form>
+</container>
 </body>
 </html>

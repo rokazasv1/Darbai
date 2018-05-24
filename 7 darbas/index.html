@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <style>
+    #container {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
     input {
         width: 200px;
-        margin-bottom: 1px;
 
+        box-sizing: border-box;
+        padding: 1px;
     }
 
     .submitbutton {
         width: 60px;
         border-radius: 15px;
-
         border: 1px solid;
     }
 
@@ -27,15 +33,44 @@
         border-radius: 15px;
     }
 
-    table {
-        width: auto;
+    .items {
+        width: 30px;
+    }
 
+    .legth {
+        width: 20px;
+        border: none;
+    }
+
+    .dates {
+        width: 150px;
+    }
+
+    .times {
+        width: 150px;
+    }
+
+    .color-inp {
+        width: 50px;
+    }
+
+    .table1 {
+        border: 1px solid;
     }
 
     table td {
         width: 200px;
-
     }
+
+    table tr td:first-child {
+        text-align: right;
+        font-weight: bolder;
+    }
+
+    table tr td:nth-child(2) {
+        width: 500px;
+    }
+
 </style>
 <head>
     <title>7 uzduotis</title>
@@ -46,53 +81,52 @@
     </script>
 </head>
 <body>
-<div class="container">
+<div id="container">
     <form action="#">
-        <table style="border: 2px solid">
+        <table class="table1">
             <tr>
-                <td style="text-align: right;font-weight: bolder">Title</td>
+                <td>Title</td>
                 <td><input type="text" placeholder="Select one of enter your own" id="title" required></td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Name</td>
+                <td>Name</td>
                 <td><input type="text" placeholder="John Doe" id="name" required></td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Phone number</td>
-                <td style="width:300px"><input type="phone" placeholder="+1 23456789" id="p-number"> (Option)</td>
+                <td>Phone number</td>
+                <td><input type="phone" placeholder="+1 23456789" id="p-number"> (Option)</td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Email address</td>
+                <td>Email address</td>
                 <td><input type="email" id="email" placeholder="vardernis@gmail.com" required></td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Your website</td>
+                <td>Your website</td>
                 <td><input type="text" placeholder="www.yoursite.com" id="web"> (Option)</td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Nr. of items to order</td>
-                <td><input type="number" max="10" style="width: 25px" id="order" required> (1-10)</td>
+                <td>Nr. of items to order</td>
+                <td><input type="number" max="10" class="items" required> (1-10)</td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Legth</td>
-                <td style="width:500px"><input type="range" min="1" max="10" onchange="updateTextInput(this.value);"
-                                               id="legth"><input type="text" value="6m " id="textInput"
-                                                                 style="width:20px; border: none;">(in 10cm increments)
+                <td>Legth</td>
+                <td><input type="range" min="1" max="10" onchange="updateTextInput(this.value);" id="legth">
+                    <input type="text" value="6m " id="textInput" class="legth"> (in 10cm increments)
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Delivery date</td>
-                <td><input type="date" min="2010-12-16" value="2010-12-17" style="width:140px" id="date">(minimum 16
+                <td>Delivery date</td>
+                <td><input type="date" min="2010-12-16" value="2010-12-17" class="dates" id="date">(minimum 16
                     December 2010)
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;font-weight: bolder" id="time">Time of delivery</td>
-                <td><input id="time" type="time" value="08:00" style="width:140px">(in 30 min increments)</td>
+                <td>Time of delivery</td>
+                <td><input id="times" type="time" value="08:00" class="times">(in 30 min increments)</td>
             </tr>
             <tr>
                 <td style="text-align: right;font-weight: bolder" id="Color">Color of the item</td>
-                <td><input type="color" value="#ff0000" style="width: 50px"> (default red)</td>
+                <td><input type="color" value="#ff0000" class="color-inp"> (default red)</td>
             </tr>
             <tr>
                 <td></td>
@@ -107,9 +141,9 @@
     <form>
         <table>
             <tr>
-                <td style="text-align: right;font-weight: bolder">Search</td>
-                <td><input type="text" class="search" id="search-input" required><input type="submit" value="Go"
-                                                                                        class="searchbutton">
+                <td >Search</td>
+                <td><input type="text" class="search" id="search-input" required>
+                    <input type="submit" value="Go" class="searchbutton">
                 </td>
             </tr>
         </table>
