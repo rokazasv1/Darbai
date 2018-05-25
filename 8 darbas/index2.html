@@ -12,6 +12,36 @@
             text-transform: uppercase;
         }
 
+        h3 {
+            font-size: 36px;
+        }
+
+        strong {
+            color: white;
+            font-weight: bolder;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        .black {
+            position: relative;
+            float: left;
+            background: black;
+            color: white;
+            padding: 0 5px;
+            margin-right: 5px;
+            display: block;
+
+        }
+
+        /*---- HEADER --------*/
         #container header {
             background-image: url(IMG/1.JPG);
             height: 100%;
@@ -55,11 +85,10 @@
 
         #container header .text-box-bottom {
             width: 280px;
-            box-sizing: border-box;
-            margin: 20px;
+            left: 10%;
+            transform: translate(-10%);
             position: absolute;
-            bottom: 0;
-
+            bottom: 10px;
             background: black;
             padding: 15px 10px;
             color: white;
@@ -99,31 +128,25 @@
             text-decoration: none;
             font-size: 20px;
         }
-        #menu {
+
+        #container #menu {
             background: black;
             color: white;
             text-transform: uppercase;
-            text-align: center;
             padding-bottom: 40px;
         }
 
-        .menu-text-box-title {
-            padding-top: 70px;
-            padding-bottom: 30px;
-            font-size: 22px;
-        }
-
-        .content {
+        #container #menu .menu-tabs-container, .about-text-container {
             margin: 0 5%;
         }
 
-        .tab {
+        #container #menu .menu-tabs-container .content .tab {
             overflow: hidden;
             border: 1px solid #616161;
 
         }
 
-        .tab button {
+        #container #menu .menu-tabs-container .content .tab button {
             background-color: black;
             color: white;
             float: left;
@@ -133,41 +156,37 @@
             font-size: 18px;
             width: 33.333333%;
             text-transform: uppercase;
-
         }
 
-        .tab button:hover {
+        #container #menu .menu-tabs-container .content .tab button:hover {
             background-color: red;
         }
 
-        .tab button .active {
+        #container #menu .menu-tabs-container .content .tab button.active {
             background-color: red;
         }
 
-        .tabcontent {
+        #container #menu .menu-tabs-container .tabcontent {
             border-top: none;
             padding: 6px 12px;
             border: 1px solid #616161;
-
             background: white;
             color: black;
-
         }
 
-        .text-box-cont {
+        #container #menu .menu-tabs-container .tabcontent .text-box-cont {
             font-size: 18px;
         }
 
-        .tab-name {
+        #container #menu .menu-tabs-container .tabcontent .tab-name {
             float: left;
             text-align: left;
             font-weight: bolder;
             margin-top: 10px;
             margin-bottom: 10px;
-
         }
 
-        .price {
+        #container #menu .menu-tabs-container .tabcontent .text-box-cont .price {
             float: right;
             text-align: right;
             background: #616161;
@@ -177,40 +196,132 @@
             margin-top: 5px;
         }
 
-        .ingred {
+        #container #menu .menu-tabs-container .tabcontent .ingred {
             padding-top: 5px;
             text-align: left;
             margin-bottom: 20px;
             color: silver;
             font-size: 14px;
             letter-spacing: -1px;
+            clear: both;
+        }
+
+        #container #menu .menu-tabs-container .tabcontent .hot,
+        #container #menu .menu-tabs-container .tabcontent .new {
+            float: right;
+            padding: 5px 5px;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-size: 12px;
+            box-sizing: border-box;
 
         }
 
-        .hot {
-            float: right;
-
-            padding: 5px 5px;
+        #container #menu .menu-tabs-container .tabcontent .hot {
             color: whitesmoke;
-            border-radius: 3px;
-            margin-top: -3px;
-            margin-left: 2px;
             background: red;
-            font-size: 12px;
-
         }
 
-        .new {
-            float: right;
-            background: #9e9e9e;
+        #container #menu .menu-tabs-container .tabcontent .new {
             color: black;
-            padding: 5px 5px;
-            border-radius: 3px;
-            margin-top: -3px;
-            margin-left: 2px;
-            font-size: 12px;
+            background: #9e9e9e;
         }
-     @media only screen and (max-width: 450px) {
+
+        #container #about {
+            box-sizing: border-box;
+            background-color: #8b5f5b;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        #container #about .about-title,  #container #menu .menu-tabs-container .menu-text-box-title,
+        footer .contact-title  {
+            text-align: center;
+            padding: 30px;
+        }
+
+        #container #about .about-cont {
+            line-height: 2;
+            font-size: 15px;
+            padding: 10px 0;
+        }
+
+        #container #about .about-chef {
+            background-color: #8b5f5b;
+            overflow: hidden;
+
+        }
+
+        #container #about .about-chef img {
+            border-radius: 50%;
+            width: 150px;
+            float: right;
+        }
+
+        #container #about .about-img {
+            width: 100%;
+        }
+
+        #container #about .work-time {
+            box-sizing: border-box;
+            font-size: 16px;
+            line-height: 1.5;
+            overflow: hidden;
+            padding: 10px 0 20px 0;
+
+        }
+
+        #container #about .work-time .left {
+            float: left;
+            width: 50%;
+        }
+
+        #container #about .work-time .right {
+            float: right;
+            width: 50%;
+        }
+
+        #container #about .work-time-title {
+            font-size: 24px;
+        }
+
+        #container #map {
+            height: 50%;
+            width: 100%;
+        }
+
+        #container footer{
+            background: #6c7a81;
+            line-height: 2;
+            color: white;
+        }
+
+        #container footer .contact-contect {
+            margin: 0 18%;
+            position: relative;
+
+        }
+
+        #container #copyrights {
+            height: 8%;
+            background: black;
+            color: white;
+            position: relative;
+            text-transform: none;
+        }
+
+        #container #copyrights .text{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+
+        }
+        #container #copyrights a {
+            color: white;
+        }
+        @media only screen and (max-width: 500px) {
             #container nav {
                 display: none;
             }
@@ -238,9 +349,11 @@
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
+
+    <!-- MENU -->
     <section id="menu">
         <div class="menu-tabs-container">
-            <div class="menu-text-box-title"><h2>THE MENU</h2></div>
+            <div class="menu-text-box-title"><h3>THE MENU</h3></div>
             <div class="content">
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'pizza')" id="defaultOpen">PIZZA</button>
@@ -252,13 +365,13 @@
                 <div class="text-box-cont">
                     <div class="tab-name">Margherita</div>
                     <div class="price">$12.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Fresh tomatoes, fresh mozzarella, fresh basil
                     </div>
                     <hr>
                     <div class="tab-name">Formaggio</div>
                     <div class="price">$15.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
                     </div>
                     <hr>
@@ -266,7 +379,7 @@
                         <div class="hot">HOT</div>
                     </div>
                     <div class="price">$20.00</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken
                     </div>
                     <hr>
@@ -274,7 +387,7 @@
                         <div class="new">NEW</div>
                     </div>
                     <div class="price">$21.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Fresh tomatoes, mozzarella, parma, bacon, fresh arugula
                     </div>
                 </div>
@@ -287,25 +400,25 @@
                         <div class="new">POPULAR</div>
                     </div>
                     <div class="price">$13.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Special sauce, mozzarella, parmesan, ground beef
                     </div>
                     <hr>
                     <div class="tab-name">Ravioli</div>
                     <div class="price">$14.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Ravioli filled with cheese
                     </div>
                     <hr>
                     <div class="tab-name">Spaghetti Classica</div>
                     <div class="price">$11.00</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Fresh tomatoes, onions, ground beef
                     </div>
                     <hr>
                     <div class="tab-name">Seafood pasta</div>
                     <div class="price">$25.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Salmon, shrimp, lobster, garlic
                     </div>
                 </div>
@@ -317,25 +430,25 @@
                         <div class="new">SEASONAL</div>
                     </div>
                     <div class="price">$5.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Ask the waiter
                     </div>
                     <hr>
                     <div class="tab-name">Bruschetta</div>
                     <div class="price">$8.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Bread with pesto, tomatoes, onion, garlic
                     </div>
                     <hr>
                     <div class="tab-name">Garlic bread</div>
                     <div class="price">$9.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Grilled ciabatta, garlic butter, onions
                     </div>
                     <hr>
                     <div class="tab-name">Tomozzarella</div>
                     <div class="price">$10.50</div>
-                    <div class="ingred" style="clear:both;">
+                    <div class="ingred">
                         Tomatoes and mozzarella
                     </div>
                 </div>
@@ -360,9 +473,86 @@
             document.getElementById("defaultOpen").click();
         </script>
     </section>
-    <div style="clear: both">
-        aaa
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-text-container">
+            <div class="about-title">
+                <h2>ABOUT</h2>
+            </div>
+            <div class="about-cont">
+                <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+                <div class="about-chef">
+                    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="IMG/2.jpg" alt="Chef"></p>
+                    <p>We are proud of our interiors.</p>
+                </div>
+
+            </div>
+            <img src="IMG/3.jpg" class="about-img">
+            <div class="work-time">
+                <div class="work-time-title">Opening Hours</div>
+                <div class="work-time-time">
+                    <div class="left">
+                        <p>MON & TUE CLOSED</p>
+                        <p>Thursday 10:00 - 24:00</p>
+                        <p>Saturday 10:00 - 23:00</p>
+                    </div>
+                    <div class="right">
+                        <p>Wednesday 10.00 - 24.00</p>
+                        <p>Friday 10:00 - 12:00</p>
+                        <p>Sunday Closed</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAP -->
+    <section id="map">
+        <script>
+            function initMap() {
+                var uluru = {lat: 41.8781, lng: -87.6298};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdpkLGSiRcloGGkPBUwzfS8vPyuPfxyrw&callback=initMap">
+        </script>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact-title">
+            <h3>CONTACT</h3>
+        </div>
+        <div class="contact-contect">
+            <p>Find us at some address at some place or call us at 05050515-122330
+            <div class="black">FYI!</div>
+            We offer full-service catering for any event, large or small. We understand your needs and we will cater
+                the food to satisfy the biggerst criteria of them all, both look and taste.
+            <strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            <form action="#">
+                <input type="text" placeholder="NAME" id="name" required>
+                <input type="number" placeholder="HOW MANY PEOPLE" required>
+                <input type="date" placeholder="Date" value="2010-12-17">
+                <input type="text" placeholder="Message \ Special requirements" id="texts" required>
+                <input type="submit" value="Send message" class="cont-btn">
+            </form>
+        </div>
+    </footer>
+    <!-- COPYRIGHTS -->
+    <div id="copyrights">
+        <div class="text">
+            <p>Powered by <a href="#">w3.css</a></p>
+        </div>
     </div>
 </div>
 </body>
