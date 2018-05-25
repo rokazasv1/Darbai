@@ -99,22 +99,18 @@
             text-decoration: none;
             font-size: 20px;
         }
-        #menu {
+         #menu {
             background: black;
-            color: white;
+            color: black;
             text-transform: uppercase;
             text-align: center;
-            padding-bottom: 40px;
+            box-sizing: border-box;
+            padding: 2%;
         }
 
-        .menu-text-box-title {
-            padding-top: 70px;
-            padding-bottom: 30px;
+         .menu-text-box-title {
+            padding: 5%;
             font-size: 22px;
-        }
-
-        .content {
-            margin: 0 5%;
         }
 
         .tab {
@@ -123,7 +119,7 @@
 
         }
 
-        .tab button {
+       .content button {
             background-color: black;
             color: white;
             float: left;
@@ -140,7 +136,7 @@
             background-color: red;
         }
 
-        .tab button .active {
+        .tab button.active {
             background-color: red;
         }
 
@@ -151,12 +147,15 @@
 
             background: white;
             color: black;
-
         }
-
-        .text-box-cont {
+         .text-box-cont {
             font-size: 18px;
         }
+        .menu-tabs-container, #about{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
 
         .tab-name {
             float: left;
@@ -210,6 +209,58 @@
             margin-left: 2px;
             font-size: 12px;
         }
+        
+        
+    #about {
+        background-color: #8b5f5b;
+        font-size: 30px;
+    }
+  .about {
+        padding-top: 30px;
+        background-color: #8b5f5b;
+        font-size: 30px;
+        color: white;
+    }
+
+    .about-title {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .about-cont {
+        line-height: 2;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .about-chef {
+        background-color: #8b5f5b;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+    }
+
+    .about-chef img {
+        border-radius: 50%;
+        height: 90px;
+        width: 150px;
+        float: right;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .work-time {
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    .work-time-title {
+        margin-top: 10px;
+        font-size: 22px;
+    }s       
+        
      @media only screen and (max-width: 450px) {
             #container nav {
                 display: none;
@@ -341,29 +392,30 @@
                 </div>
             </div>
         </div>
-        <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
                 }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
 
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
     </section>
-    <div style="clear: both">
-        aaa
+    
+    <section id="about">
+    a
+    </section>
 
-    </div>
 </div>
 </body>
 </html>
