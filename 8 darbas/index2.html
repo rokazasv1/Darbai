@@ -128,11 +128,16 @@
             text-decoration: none;
             font-size: 20px;
         }
+<<<<<<< HEAD
 
         #container #menu {
+=======
+         #menu {
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
             background: black;
-            color: white;
+            color: black;
             text-transform: uppercase;
+<<<<<<< HEAD
             padding-bottom: 40px;
         }
 
@@ -141,12 +146,29 @@
         }
 
         #container #menu .menu-tabs-container .content .tab {
+=======
+            text-align: center;
+            box-sizing: border-box;
+            padding: 2%;
+        }
+
+         .menu-text-box-title {
+            padding: 5%;
+            font-size: 22px;
+        }
+
+        .tab {
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
             overflow: hidden;
             border: 1px solid #616161;
 
         }
 
+<<<<<<< HEAD
         #container #menu .menu-tabs-container .content .tab button {
+=======
+       .content button {
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
             background-color: black;
             color: white;
             float: left;
@@ -162,7 +184,11 @@
             background-color: red;
         }
 
+<<<<<<< HEAD
         #container #menu .menu-tabs-container .content .tab button.active {
+=======
+        .tab button.active {
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
             background-color: red;
         }
 
@@ -173,10 +199,19 @@
             background: white;
             color: black;
         }
+<<<<<<< HEAD
 
         #container #menu .menu-tabs-container .tabcontent .text-box-cont {
+=======
+         .text-box-cont {
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
             font-size: 18px;
         }
+        .menu-tabs-container, #about{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
 
         #container #menu .menu-tabs-container .tabcontent .tab-name {
             float: left;
@@ -310,6 +345,7 @@
             position: relative;
             text-transform: none;
         }
+<<<<<<< HEAD
 
         #container #copyrights .text{
             top: 50%;
@@ -322,6 +358,61 @@
             color: white;
         }
         @media only screen and (max-width: 500px) {
+=======
+        
+        
+    #about {
+        background-color: #8b5f5b;
+        font-size: 30px;
+    }
+  .about {
+        padding-top: 30px;
+        background-color: #8b5f5b;
+        font-size: 30px;
+        color: white;
+    }
+
+    .about-title {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .about-cont {
+        line-height: 2;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .about-chef {
+        background-color: #8b5f5b;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+    }
+
+    .about-chef img {
+        border-radius: 50%;
+        height: 90px;
+        width: 150px;
+        float: right;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .work-time {
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    .work-time-title {
+        margin-top: 10px;
+        font-size: 22px;
+    }s       
+        
+     @media only screen and (max-width: 450px) {
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
             #container nav {
                 display: none;
             }
@@ -454,25 +545,30 @@
                 </div>
             </div>
         </div>
-        <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
                 }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
 
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
     </section>
+    
+    <section id="about">
+    a
+    </section>
+<<<<<<< HEAD
     <!-- ABOUT -->
     <section id="about">
         <div class="about-text-container">
@@ -554,6 +650,9 @@
             <p>Powered by <a href="#">w3.css</a></p>
         </div>
     </div>
+=======
+
+>>>>>>> befb1dc8be79c59aba9031f0a0fcaebfdf47f9a9
 </div>
 </body>
 </html>
