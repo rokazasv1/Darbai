@@ -2,78 +2,61 @@
 <html lang="en">
 <head>
 
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-.navbar {
-    border: none;
-    border-radius: 0px;
-    
-}
-    .navbar-brand big{
-        font-size:28px;
-        color: silver;
-    }
-    
-.navbar-brand small {
-  display:block;
-  font-size:12px;
-     color: silver;
-}
-    .navbar-nav padings{
-        background-color: antiquewhite;
-        padding:10px;
-        
-    }
-@media (min-width:768px) {
-  
-  .navbar-brand {
-    padding-top:20px;
-  }
-  
-  .nav.navbar-nav a {
-    padding-top:30px;
-    padding-bottom:30px;
-  }
-.navbar-right {
-    float: right!important;
-    margin-right: -15px;
-    /* box-sizing: border-box; */
-    /* padding: 20px; */
-    display: block;
-    border: 1px solid;
-    padding: 10px;
-    background: black;
-    }
-}
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <style>
 
 
+        .navbar-brand{
+            color: #c0bab6;
+            padding-top: 30px;
+        }
+        .navbar-brand > .big {
+            font-size: 26px;
+            padding-bottom: 5px;
+        }
+        .navbar-inverse {
+            background-color: #333333;
+            border-radius: 0;
+        }
 
+        .navbar-nav {
+
+            padding: 5px 5px;
+            margin: 20px;
+        }
+
+        .navbar-nav > li > a {
+            background: #232323;
+
+        }
     </style>
 </head>
 <body>
 
 <nav class="navbar navbar-inverse">
-  <div class="container" >
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#"><big>Basic 89</big><small>Free HTML5 Website Temple</small></a>
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <div class="big">Basic 8<sub>9</sub></div>
+                <div class="small">Free HTML<sub>5</sub> Website Temple</div>
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
     </div>
-    <ul class="nav navbar-nav navbar-right padings">
-      <li><a href="#">Home</a></li> 
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
 </nav>
-  
+
 <div class="container">
-  <h3>Navbar With Dropdown</h3>
-  <p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>
+    <h3>Navbar With Dropdown</h3>
+    <p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>
 </div>
 
 </body>
