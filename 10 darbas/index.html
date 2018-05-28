@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>JavaScript Functions</h2>
+
+<p>Calculator </p>
+Iveskite krastines ilgi <input type="number" id="a" value="" title="a"><br>
+Iveskite krastines ilgi <input type="number" id="b" value="" title="b">
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<button id="submit">Try it</button>
+<script>
+
+    document.getElementById("submit").addEventListener("click", function () {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var s = a * b;
+        var p = (a + b) * 2;
+        var r = (a ** 2) + (b ** 2);
+
+
+        document.getElementById("demo").innerHTML = "Staciakampio perimetras" + " " + "=" + " " + s;
+        document.getElementById("demo2").innerHTML = "Staciakampio plotas" + " " + "=" + " " + p;
+        document.getElementById("demo3").innerHTML = "Staciakampio istrizaine" + " " + "=" + " " + r;
+    });
+</script>
+
+</body>
+</html>
