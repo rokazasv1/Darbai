@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18d58f1c-8861-48cd-9b6d-5b333950b1b9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9 darbas/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/9 darbas/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9 darbas/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/9 darbas/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/9 darbas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/9 darbas/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/9 darbas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="1159">
+              <caret line="279" column="49" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -49,7 +47,7 @@
       <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/9 darbas/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
+            <state relative-caret-position="1343">
               <caret line="4" column="75298" selection-start-line="4" selection-start-column="75284" selection-end-line="4" selection-end-column="75298" />
             </state>
           </provider>
@@ -85,6 +83,7 @@
       <find>sub</find>
       <find>@media</find>
       <find>navbar-inverse</find>
+      <find>pho</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,8 +120,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="456" />
-    <option name="y" value="108" />
+    <option name="x" value="638" />
+    <option name="y" value="19" />
     <option name="width" value="1352" />
     <option name="height" value="669" />
   </component>
@@ -262,14 +261,16 @@
       <workItem from="1527248644841" duration="7400000" />
       <workItem from="1527408500268" duration="3597000" />
       <workItem from="1527431765130" duration="14997000" />
+      <workItem from="1527529280652" duration="6130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82165000" />
+    <option name="totallyTimeSpent" value="88295000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="456" y="108" width="1352" height="669" extended-state="0" />
+    <frame x="638" y="19" width="1352" height="669" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16916168" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -315,9 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2465">
           <caret line="145" column="52" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -332,10 +330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-          <folding>
-            <element signature="e#125#159#0" />
-            <element signature="e#192#268#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -371,9 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,10 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9401">
           <caret line="558" column="7" selection-start-line="558" selection-start-column="7" selection-end-line="558" selection-end-column="7" />
-          <folding>
-            <element signature="e#125#159#0" />
-            <element signature="e#192#268#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,11 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4947">
           <caret line="291" selection-start-line="291" selection-end-line="299" selection-end-column="5" />
-          <folding>
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,9 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="145" column="52" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,6 +554,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/9 darbas/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="4" column="75298" selection-start-line="4" selection-start-column="75284" selection-end-line="4" selection-end-column="75298" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/3 darbas/3 darbas.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -582,17 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/9 darbas/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="4" column="75298" selection-start-line="4" selection-start-column="75284" selection-end-line="4" selection-end-column="75298" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/9 darbas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="1159">
+          <caret line="279" column="49" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="50" />
         </state>
       </provider>
     </entry>
