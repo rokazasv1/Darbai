@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        html, body {
-
-            height: 100%;
-
-            padding: 0;
-
-            margin: 0;
-
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
         }
 
-        div {
-            background-image: url("img/icon/earth.png");
+        #slide {
+            position: absolute;
+            left: -100px;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transition: 1s;
+        }
 
-            padding: 0;
-
-            margin: 0;
-
+        .wrapper:hover #slide {
+            transition: 1s;
+            left: 0;
         }
     </style>
 </head>
 <body>
-<div>
-
+<div class="wrapper">
+    <div id="slide"></div>
 </div>
 </body>
 </html>
