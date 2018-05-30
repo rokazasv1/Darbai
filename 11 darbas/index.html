@@ -24,25 +24,21 @@
             background-repeat: no-repeat;
             padding-left: 20px;
         }
-
         .phone-icon {
             background-image: url("img/icon/phone.png");
             background-repeat: no-repeat;
             padding-left: 20px;
         }
-
         .globe-icon {
             background-image: url("img/icon/worldwide.png");
             background-repeat: no-repeat;
             padding-left: 20px;
         }
-
         .key-icon {
             background-image: url("img/icon/key.png");
             background-repeat: no-repeat;
             padding-left: 20px;
         }
-
         .topnav {
             background: #f9f9f9;
             border-bottom: 1px solid #e4e4e4;
@@ -50,21 +46,18 @@
             color: #666666;
             width: 100%;
         }
-
         .btn-nav {
             color: #666666;
             height: 40px;
             background: transparent;
             border: none;
-            margin-right: 40px;
+            
         }
-
         /* The container <div> - needed to position the dropdown content */
         .dropdown {
             display: inline;
             margin: 0;
         }
-
         .dropdown-menu > li > a {
             display: block;
             padding: 3px 10px;
@@ -73,32 +66,26 @@
             white-space: nowrap;
             width: 120px;
         }
-
         .dropdown-menu > li > a:hover {
             background-color: #2cb6b4;
             color: white;
         }
-
         .dropdown-menu {
             margin-left: 5px;
             border: none;
             box-shadow: none;
             background: transparent;
             padding-top: 10px;
-
         }
-
         .dropdown-menu .active {
             background-color: #2cb6b4;
             background-image: url("img/icon/checked.png");
             background-repeat: no-repeat;
             background-position: right 20px bottom 5px;
         }
-
         .dropdown:hover .dropdown-menu {
             display: block;
         }
-
         .dropdown:focus {
             outline: 0;
         }
@@ -107,32 +94,53 @@
 <body>
 <div id="main_wrapper">
     <nav>
-        <div class="topnav">
+        <div class="topnav text-left">
             <div class="container">
-                <div class="dropdown">
-                    <button class="btn-nav " type="button" data-toggle="dropdown">
-
-                        <div class="globe-icon-space globe-icon">ENGLISH</div>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="active">English</a></li>
-                        <li><a href="#">RTL</a></li>
-                    </ul>
+                <div class="row text-center">
+                    <div class="col-sm-10">
+                            <div class="dropdown">
+                                <button class="btn-nav " type="button" data-toggle="dropdown">
+                                    <div class="globe-icon-space globe-icon">ENGLISH</div>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="active">English</a></li>
+                                    <li><a href="#">RTL</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-nav" type="button">
+                                <div class="key-icon-space key-icon">LOGIN</div>
+                            </button>
+                            <button class="btn-nav" type="button">
+                                <div class="phone-icon">CALL US : (123) 456 - 7890</div>
+                            </button>
+                            <button class="btn-nav" type="button">
+                                <div class="chat-icon">SUPPORT : (123) 456 - 7890</div>
+                            </button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn-nav" type="button">
+                            <div class="chat-icon">FB</div>
+                        </button>
+                        <button class="btn-nav" type="button">
+                            <div class="chat-icon">TWITT</div>
+                        </button>
+                        <button class="btn-nav" type="button">
+                            <div class="chat-icon">GOOGLE+</div>
+                        </button>
+                        <button class="btn-nav" type="button">
+                            <div class="chat-icon">SKYPE</div>
+                        </button>
+                        <button class="btn-nav" type="button">
+                            <div class="chat-icon">PICASA</div>
+                        </button>
+                        <button class="btn-nav" type="button">
+                            <div class="chat-icon">VIMEO</div>
+                        </button>
+                    </div>
                 </div>
-                <button class="btn-nav" type="button">
-                    <div class="key-icon-space key-icon">LOGIN</div>
-                </button>
-                <button class="btn-nav" type="button">
-                    <div class="phone-icon">CALL US : (123) 456 - 7890</div>
-                </button>
-                <button class="btn-nav" type="button">
-                    <div class="chat-icon">CALL US : (123) 456 - 7890</div>
-                </button>
-
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+    </div>
 </body>
 </html>
-
