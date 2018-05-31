@@ -4,6 +4,8 @@
     <title>11 darbas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400italic,600,600italic,700,700italic,800,800italic"
@@ -19,14 +21,18 @@
             color: #666666;
             line-height: 1.5;
         }
+
         .fb-icon {
             background-image: url("img/icon/fb.png");
             background-repeat: no-repeat;
-            padding-left: 20px;
-            height: 100%;
+            padding-left: 15px;
+            width: 12px;
+            height: 16.5px;
+            margin-left: 10px;
         }
+
         .chat-icon {
-            background-image: url("img/icon/chat.png");
+            background-image: url("img/icon/chat.svg");
             background-repeat: no-repeat;
             padding-left: 20px;
         }
@@ -55,6 +61,7 @@
             font-size: 11px;
             color: #666666;
             width: 100%;
+
         }
 
         .btn-nav {
@@ -62,6 +69,38 @@
             height: 40px;
             background: transparent;
             border: none;
+        }
+
+        .btn-nav2 {
+            color: #666666;
+            height: 37px;
+            background: transparent;
+            border: none;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding-right: 10px;
+        }
+
+        .fb-icon .asd {
+            display: none;
+        }
+
+        .fb-icon:hover {
+            background-color: #2aabd2;
+        }
+
+        .fb-icon:hover .asd {
+            display: block;
+            position: absolute;
+            animation: slide 4s forwards;
+            background-color: #2aabd2;
 
         }
 
@@ -90,7 +129,7 @@
             border: none;
             box-shadow: none;
             background: transparent;
-            padding-top: 10px;
+            padding-top: 21px;
         }
 
         .dropdown-menu .active {
@@ -104,8 +143,15 @@
             display: block;
         }
 
-        .dropdown:focus {
-            outline: 0;
+        .top-nav-icon-padding {
+            padding-left: 5px;
+            float: right;
+        }
+        .fa{
+            font-size:13px;
+        }
+        .fa-facebook{
+            float: left;
         }
     </style>
 </head>
@@ -115,52 +161,60 @@
         <div class="topnav text-left">
             <div class="container">
                 <div class="row text-left">
-                    <div class="col-sm-10">
-                        <div class="dropdown">
-                            <button class="btn-nav " type="button" data-toggle="dropdown">
-                                <div class="globe-icon-space globe-icon">ENGLISH</div>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" class="active">English</a></li>
-                                <li><a href="#">RTL</a></li>
-                            </ul>
-                        </div>
-                        <button class="btn-nav" type="button">
-                            <div class="key-icon-space key-icon">LOGIN</div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="phone-icon">CALL US : (123) 456 - 7890</div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="chat-icon">SUPPORT : (123) 456 - 7890</div>
-                        </button>
+                    <div class="col-sm-9" style="border: 1px solid red">
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn-nav " type="button" data-toggle="dropdown">
+                                        <i class="fa fa-globe"></i>
+                                        <div class="top-nav-icon-padding">ENGLISH</div>
+
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="active">English</a></li>
+                                        <li><a href="#">RTL</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn-nav" type="button">
+                                    <i class="fa fa-key"></i>
+                                    <div class="top-nav-icon-padding">LOGIN</div>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-nav" type="button">
+                                    <i class="fa fa-phone"></i>
+                                    <div class="top-nav-icon-padding">CALL US : (123) 456 - 7890</div>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-nav" type="button">
+                                    <i class="far fa-comment  fa-flip-horizontal"></i>
+                                    <div class="top-nav-icon-padding">SUPPORT : (123) 456 - 7890</div>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-sm-2">
-                        <button class="btn-nav" type="button">
-                            <div class="fb-icon">
-                                a
-                            </div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="chat-icon">TWITT</div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="chat-icon">GOOGLE+</div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="chat-icon">SKYPE</div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="chat-icon">PICASA</div>
-                        </button>
-                        <button class="btn-nav" type="button">
-                            <div class="chat-icon">VIMEO</div>
-                        </button>
+
+                    <div class="col-sm-3" style="border: 1px solid red;">
+
+                        <ul>
+                            <li>
+                                <button class="btn-nav2" type="button">
+                                    <i class="fa fa-facebook" >
+                                        <div class="asd">Facebook</div>
+                                    </i>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+
     </nav>
+
 </div>
 </body>
 </html>
