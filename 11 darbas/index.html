@@ -23,63 +23,30 @@
             color: #666666;
             line-height: 1.5;
         }
-
-        .fb-icon {
-            background-image: url("img/icon/fb.png");
-            background-repeat: no-repeat;
-            padding-left: 15px;
-            width: 12px;
-            height: 16.5px;
-            margin-left: 10px;
-        }
-
-        .chat-icon {
-            background-image: url("img/icon/chat.svg");
-            background-repeat: no-repeat;
-            padding-left: 20px;
-        }
-
-        .phone-icon {
-            background-image: url("img/icon/phone.png");
-            background-repeat: no-repeat;
-            padding-left: 20px;
-        }
-
-        .globe-icon {
-            background-image: url("img/icon/worldwide.png");
-            background-repeat: no-repeat;
-            padding-left: 20px;
-        }
-
-        .key-icon {
-            background-image: url("img/icon/key.png");
-            background-repeat: no-repeat;
-            padding-left: 20px;
-        }
-
+        /*-------------------TOP NAV---------------------------------*/
         .topnav {
             background: #f9f9f9;
             border-bottom: 1px solid #e4e4e4;
             font-size: 11px;
             color: #666666;
             width: 100%;
-
+            transition: height, 0.5s linear;
         }
 
+        .top-nav-height{
+            padding-top: 10px;
+        }
+
+        .topnav-text-hide {
+            float: left;
+        }
+
+        /*-------------------TOP NAV BUTTON---------------------------------*/
         .btn-nav {
-            color: #666666;
-            height: 40px;
+            color: #808c8c;
             background: transparent;
             border: none;
-        }
-
-        .btn-nav2 {
-
-            color: #666666;
-            height: 37px;
-            background: transparent;
-            border: none;
-            padding-left: 15px;
+            margin-left: 10px;
         }
 
         ul {
@@ -91,18 +58,8 @@
             display: inline-block;
             padding-right: 10px;
         }
-
-        .fb-icon .asd {
-            display: none;
-        }
-
-        .fb-icon:hover .asd {
-            background-color: #2aabd2;
-            display: block;
-            position: relative;
-        }
-
-        /* The container <div> - needed to position the dropdown content */
+        /*-------------------------------------------------------------------*/
+        /*-------------------TOP NAV DROPDOWN--------------------------------*/
         .dropdown {
             display: inline;
             margin: 0;
@@ -140,184 +97,267 @@
         .dropdown:hover .dropdown-menu {
             display: block;
         }
-
+        /*---------------------------------------------------------------------------*/
+        /*----------------------Icon ------------------------------------------------*/
         .top-nav-icon-padding {
             padding-left: 5px;
             float: right;
-        }
 
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: #008CBA;
-            overflow: hidden;
-            width: 0;
-
-            transition: .5s ease;
-        }
-
-        .container:hover .overlay {
-            width: 100%;
-        }
-
-        .text {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            white-space: nowrap;
-        }
-
-        .asd, .asd1 {
-            position: relative;
-            display: none;
         }
 
         .fa {
-            font-size: 13px;
+            font-size: 14px;
 
         }
-
-        .fa:hover .asd, .fa:hover .asd1 {
-            display: block;
-            position: relative;
-
+        .fi-social-picasa{
+            font-size: 16px;
+        }
+        /*----------------------------------------------------------------------------*/
+        /*-----------------------------TOP NAV RIGHT SIDE-----------------------------*/
+        .top-socials, .btn-nav {
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
-        .fa-facebook, .fa-twitter, .fa-google-plus, .fi-social-picasa, .fa-vimeo, .fa-skype, .fa-facebook-square {
-            float: left; z-index: 0; position: absolute;
+        .top-socials a span.soc_name {
+
+            transition: all 0.4s ease;
         }
 
-        * > .fa.fa-hover-show,
-        *:hover > .fa.fa-hover-hidden {
-            display: none;
-            transition: 4s;
-
-        }
-
-        *:hover > .fa.fa-hover-show {
+        .top-socials a {
+            color: #808c8c;
             display: inline-block;
-
-            background: red;
-
+            font-size: 14px;
+            height: 32px;
+            line-height: 34px;
+            margin-top: 4px;
+            outline: medium none;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            width: 32px;
             z-index: 1;
+        }
+
+        .top-socials a:hover {
+            color: #fff;
+            z-index: 10;
+        }
+
+        .top-socials a span.soc_name {
+            opacity: 0;
+            background: #1ccdca;
+            display: block;
+            font-size: 12px;
+            height: 32px;
+            left: 14px;
+            line-height: 31px;
+            color: white;
+            position: absolute;
+            top: 0;
+            z-index: 0;
+            font-style: italic;
+        }
+
+        .top-socials a span.soc_icon_bg {
+            background: rgba(0, 0, 0, 0.15);
+            display: block;
+            content: "";
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .top-socials a i {
+            position: relative;
+            z-index: 1;
+        }
+
+        .top-socials a:hover > span.soc_name {
+            width: auto;
+            padding-left: 28px;
+            opacity: 1;
+        }
+
+        .top-socials a:hover > span.soc_icon_bg {
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+        }
+
+        .top-socials a:last-child > span.soc_name {
+            right: 11px;
+            left: auto;
+        }
+
+        .top-socials a:last-child:hover > span.soc_name {
+            padding-left: 12px;
+            padding-right: 28px;
+        }
+
+        .top-socials a:last-child span.soc_name:before {
+            display: none;
+        }
+
+        .top-socials span.soc_name:after, .top-socials span.soc_name:before {
+            background: #1ccdca;;
+            content: "";
+            display: block;
+            height: 32px;
+            position: absolute;
+            top: 0;
+            width: 32px;
+            z-index: -1;
+        }
+
+        .top-socials span.soc_name:after {
+            right: -12px;
+        }
+
+        .top-socials span.soc_name:before {
+            left: -14px;
+        }
+         /*---------------------------------------------------------------*/
+
+
+        .top_expande {
+            background: #fff;
+            border: 1px solid #e4e4e4;
+            display: none;
+            height: 20px;
+            width: 100%;
+            cursor: pointer;
+            color: #1ccdca;
+            position: relative;
+            font-size: 16px;
+            border-top: none;
+            text-align: center;
+
+        }
+        @media only screen and (max-width: 768px){
+            .top_expande {
+                display: block;
+
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .row {
+                text-align: center;
+            }
+            /*-------------------TOP NAV---------------------------------*/
+            .topnav-text-hide {
+                display: none;
+            }
+            /*-----------------------------------------------------------*/
         }
     </style>
 </head>
 <body>
-<div id="main_wrapper">
-    <nav>
-        <div class="topnav text-left">
+    <div id="main_wrapper">
+        <div class="topnav" id="topnavid">
             <div class="container">
-                <div class="row text-left">
-                    <div class="col-sm-9" style="border: 1px solid red">
-                        <ul>
-                            <li>
-                                <div class="dropdown">
-                                    <button class="btn-nav " type="button" data-toggle="dropdown">
-                                        <i class="fa fa-globe"></i>
-                                        <div class="top-nav-icon-padding">ENGLISH</div>
-
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" class="active">English</a></li>
-                                        <li><a href="#">RTL</a></li>
-                                    </ul>
+                <div class="row">
+                    <div class="col-sm-8 col-md-8 col-lg-8 top-nav-height">
+                        <div class="top-nav-left">
+                            <div class="dropdown">
+                                <button class="btn-nav" type="button" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <div class="top-nav-icon-padding">ENGLISH</div>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="active">English</a></li>
+                                    <li><a href="#">RTL</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-nav" type="button" data-toggle="dropdown">
+                                <i class="fa fa-key"></i>
+                                <div class="top-nav-icon-padding">LOGIN</div>
+                            </button>
+                            <button class="btn-nav" type="button" data-toggle="dropdown">
+                                <i class="fa fa-phone"></i>
+                                <div class="top-nav-icon-padding">
+                                    <div class="topnav-text-hide">CALL US :</div>
+                                    (123) 456 - 7890
                                 </div>
-                            </li>
-                            <li>
-                                <button class="btn-nav" type="button">
-                                    <i class="fa fa-key"></i>
-                                    <div class="top-nav-icon-padding">LOGIN</div>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-nav" type="button">
-                                    <i class="fa fa-phone"></i>
-                                    <div class="top-nav-icon-padding">CALL US : (123) 456 - 7890</div>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-nav" type="button">
-                                    <i class="far fa-comment  fa-flip-horizontal"></i>
-                                    <div class="top-nav-icon-padding">SUPPORT : (123) 456 - 7890</div>
-                                </button>
-                            </li>
-                        </ul>
+                            </button>
+                            <button class="btn-nav" type="button" data-toggle="dropdown">
+                                <i class="fa fa-comment-o fa-flip-horizontal"></i>
+                                <div class="top-nav-icon-padding">
+                                    <div class="topnav-text-hide">SUPPORT :</div>
+                                    (123) 456 - 7890
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                    <div class="row text-left">
-                        <div class="col-sm-3" style="border: 1px solid red;">
-                            <nav>
-                                <ul style="display: inline-block">
-
-                                        <button class="btn-nav2" type="button"><a href="">
-                                            <i class="fa fa-facebook fa-hover-hidden"></i>
-                                                    <i class="fa fa-facebook  fa-hover-show">
-                                                    <div class="asd" style="float: right">
-                                                        Facebook
-                                                    </div>
-                                                </i>
-                                        </a>
-                                        </button>
-
-                                    </li>
-                                </ul>
-
-                                <!--<button class="btn-nav2" type="button"><a href="">-->
-                                    <!--<div class="overlay">-->
-                                    <!--<i class="fa fa-facebook fa-hover-hidden "></i>-->
-                                    <!--<i class="fa fa-facebook fa-hover-show ">-->
-
-                                        <!--<div class="text" style="float: right">-->
-                                            <!--aa-->
-                                        <!--</div>-->
-
-                                    <!--</i>-->
-                                <!--</div>-->
-                                <!--</a>-->
-
-                                <!--</button>-->
-                                <button class="btn-nav2" type="button">
-                                    <i class="fa fa-twitter">
-                                        <div class="asd" style="float: right">Twitter</div>
-                                    </i>
-                                </button>
-                                <button class="btn-nav2" type="button">
-                                    <i class="fa fa-google-plus">
-                                        <div class="asd" style="float: right">Google plus</div>
-                                    </i>
-                                </button>
-                                <button class="btn-nav2" type="button">
-                                    <i class="fa fa-skype">
-                                        <div class="asd" style="float: right">Skype</div>
-                                    </i>
-                                </button>
-                                <button class="btn-nav2" type="button">
-                                    <i class="fa fi-social-picasa">
-                                        <div class="asd" style="float: right">picassa</div>
-                                    </i>
-                                </button>
-                                <button class="btn-nav2" type="button">
-                                    <i class="fa fa-vimeo">
-                                        <div class="asd1" style="float: left">Vimeo</div>
-                                    </i>
-                                </button>
-                                </li>
-                                </ul>
-                            </nav>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="top-socials ">
+                            <a href="#">
+                                <span class="soc_name">Facebook</span>
+                                <span class="soc_icon_bg"></span>
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <span class="soc_name">Twitter</span>
+                                <span class="soc_icon_bg"></span>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <span class="soc_name">Google+</span>
+                                <span class="soc_icon_bg"></span>
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#">
+                                <span class="soc_name">Skype</span>
+                                <span class="soc_icon_bg"></span>
+                                <i class="fa fa-skype"></i>
+                            </a>
+                            <a href="#">
+                                <span class="soc_name">picassa</span>
+                                <span class="soc_icon_bg"></span>
+                                <i class="fa fi-social-picasa"></i>
+                            </a>
+                            <a href="#">
+                                <span class="soc_name">Vimeo</span>
+                                <span class="soc_icon_bg"></span>
+                                <i class="fa fa-vimeo"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="top_expande" onclick="myFunction()">
+            <i id="expande" class="fa fa-angle-double-up" aria-hidden="true"></i>
 
-    </nav>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("topnavid");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
 
-</div>
+
+                } else {
+                    x.style.display = "none";
+                }
+
+                var e = document.getElementById("expande");
+                if (e.classList.contains('fa-angle-double-up')) {
+                    e.classList.remove('fa-angle-double-up');
+                    e.classList.add('fa-angle-double-down');
+
+                }else {
+                    e.classList.remove('fa-angle-double-down');
+                    e.classList.add('fa-angle-double-up');
+                }
+            }
+        </script>
+    </div>
 </body>
 </html>
