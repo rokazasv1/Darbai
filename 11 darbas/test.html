@@ -1,29 +1,168 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#flip").click(function(){
-            $("#panel").slideToggle("slow");
-        });
-    });
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
 
-<style>
-    #panel, #flip {
-        padding: 5px;
-        text-align: center;
-        background-color: #e5eecc;
-        border: solid 1px #c3c3c3;
-    }
+        .topnav {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
 
-    #panel {
-        padding: 50px;
-        display: none;
-    }
-</style>
+        #myHeader {
+            padding: 10px 16px;
+            background: #555;
+            color: #f1f1f1;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 102px;
+        }
+    </style>
 </head>
 <body>
 
+<div class="topnav" id="topnavid">
+    <div class="container">
+        <div class="row">
+            <div id="panel">
+                <div class="col-sm-8 col-md-8 col-lg-8 top-nav-height">
+                    <div class="top-nav-left">
+                        <div class="dropdown dropdown1">
+                            <button class="btn-nav" type="button" data-toggle="dropdown">
+                                <i class="fa fa-globe"></i>
+                                <div class="top-nav-icon-padding">ENGLISH</div>
+                            </button>
+                            <ul class="dropdown-menu dropdown1-menu">
+                                <li><a href="#" class="active">English</a></li>
+                                <li><a href="#">RTL</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn-nav" type="button" >
+                            <i class="fa fa-key"></i>
+                            <div class="top-nav-icon-padding">LOGIN</div>
+                        </button>
+                        <button class="btn-nav" type="button" >
+                            <i class="fa fa-phone"></i>
+                            <div class="top-nav-icon-padding">
+                                <div class="topnav-text-hide">CALL US :</div>
+                                (123) 456 - 7890
+                            </div>
+                        </button>
+                        <button class="btn-nav" type="button">
+                            <i class="fa fa-comment-o fa-flip-horizontal"></i>
+                            <div class="top-nav-icon-padding">
+                                <div class="topnav-text-hide">SUPPORT :</div>
+                                (123) 456 - 7890
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="top-socials">
+                        <a href="#">
+                            <span class="soc_name">Facebook</span>
+                            <span class="soc_icon_bg"></span>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <span class="soc_name">Twitter</span>
+                            <span class="soc_icon_bg"></span>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <span class="soc_name">Google+</span>
+                            <span class="soc_icon_bg"></span>
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a href="#">
+                            <span class="soc_name">Skype</span>
+                            <span class="soc_icon_bg"></span>
+                            <i class="fa fa-skype"></i>
+                        </a>
+                        <a href="#">
+                            <span class="soc_name">picassa</span>
+                            <span class="soc_icon_bg"></span>
+                            <i class="fa fi-social-picasa"></i>
+                        </a>
+                        <a href="#">
+                            <span class="soc_name">Vimeo</span>
+                            <span class="soc_icon_bg"></span>
+                            <i class="fa fa-vimeo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="flip">
+    <div class="top_expande top_expande-none">
+        <i id="expande" class="fa fa-angle-double-down" aria-hidden="true">a</i>
+    </div>
+</div>
 
+<div id="myHeader" class="main-nav">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#"><img class="logo_dark" src="img/logo-dark.png" alt="Enar Logo"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">SLIDERS</a></li>
+                    <li><a href="#">SHORTCODES</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="content">
+    <h3>On Scroll Sticky Header</h3>
+    <p>The header will stick to the top when you reach its scroll position.</p>
+    <p>Scroll back up to remove the sticky effect.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
 
 </body>
 </html>
