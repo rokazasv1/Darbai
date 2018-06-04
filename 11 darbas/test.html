@@ -19,9 +19,9 @@
             border-radius: 0 6px 6px 6px;
         }
 
-        .dropdown-submenu:hover>.dropdown-menu {
-            display: block;
-        }
+        /*.dropdown-submenu:hover>.dropdown-menu {*/
+            /*display: block;*/
+        /*}*/
 
         .dropdown-submenu>a:after {
             display: block;
@@ -52,15 +52,17 @@
             -moz-border-radius: 6px 0 6px 6px;
             border-radius: 6px 0 6px 6px;
         }
-        .dropdown-toggle1:hover .dropdown-submenu1 {
-            display: block;
-        }
-
+        /*.dropdown-toggle1:hover .dropdown-submenu1 {*/
+            /*display: block;*/
+        /*}*/
+        /*.dropdown-toggle1:hover .dropdown-submenu1 {*/
+        /*display: none;*/
+        /*}*/
         .yamm .nav,
         .yamm .collapse,
         .yamm .dropup,
         .yamm .dropdown {
-            position: static;
+            position:static;
         }
         .yamm .container {
             position: relative;
@@ -77,7 +79,16 @@
         }
     </style>
 
-
+    <script>(function($){
+        $(document).ready(function(){
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+        });
+    })(jQuery);</script>
 </head>
 <body>
 
@@ -326,11 +337,8 @@
                 <!--PAGES SHORTCODES MENU-->
                 <li class=" dropdown-toggle1">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">slider<b class="caret"></b></a>
-
                     <ul class="dropdown-menu dropdown-submenu1 multi-level">
-
                         <li class="dropdown-submenu ">
-
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Revolution Slider</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Fullscreen</a></li>
@@ -346,7 +354,69 @@
                         </li>
 
                     </ul>
-
+                </li>
+                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pictures<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <div class="row">
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p><strong>Section Title</strong></p>
+                                            </li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                        </ul>
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p><strong>Links Title</strong></p>
+                                            </li>
+                                            <li><a href="#"> Link Item </a></li>
+                                            <li><a href="#"> Link Item </a></li>
+                                            <li><a href="#"> Link Item </a></li>
+                                            <li><a href="#"> Link Item </a></li>
+                                            <li><a href="#"> Link Item </a></li>
+                                            <li><a href="#"> Link Item </a></li>
+                                        </ul>
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p><strong>Section Title</strong></p>
+                                            </li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                        </ul>
+                                        <ul class="col-sm-3 list-unstyled">
+                                            <li>
+                                                <p><strong>Section Title2</strong></p>
+                                            </li>
+                                            <li>List Item</li>
+                                            <li>List Item</li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Owl slider</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Defailt Slider</a></li>
+                                                    <li><a href="#">Portfolio Slider</a></li>
+                                                    <li><a href="#">Features Slider</a></li>
+                                                    <li><a href="#">Text Slider<</a></li>
+                                                    <li><a href="#">Products Slider</a></li>
+                                                    <li><a href="#">Gallery Slider</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -354,8 +424,6 @@
 </div>
 </body>
 </html>
-
-
 
 
 <li>
