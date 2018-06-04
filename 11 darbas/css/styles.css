@@ -271,6 +271,53 @@ ul li {
     top: 0;
     width: 100%;
 }
+
+
+input {
+    outline: none;
+}
+.search-box-container{
+    float: right; width: 100%; position: absolute
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    margin-right: 35px;
+    float: right;
+    margin-top: 1px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type=search] {
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 12px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 0px;
+    border-radius: 10em;
+    transition: all .50s;
+}
+
+input[type=search]:focus {
+    box-sizing: border-box;
+    width: 99%;
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+input:-moz-placeholder {
+    color: #999;
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
     /*---------------------TOP NAV SLIDE--------------------------*/
     /* SLIDE DIV */
@@ -284,6 +331,7 @@ ul li {
     .sticky {
         position: relative;
     }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -303,4 +351,20 @@ ul li {
         position: relative;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .row {
+        text-align: center;
+    }
 
+    /*-------------------TOP NAV---------------------------------*/
+    .topnav-text-hide {
+        display: none;
+    }
+    /*-----------------------------------------------------------*/
+    .top-socials{
+        float: none;
+    }
+    .sticky {
+        position: relative;
+    }
+}
