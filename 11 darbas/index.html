@@ -21,6 +21,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
+        $(function () {
+            $("#navigation").load("nav.html");
+            $("#slideshow").load("slide.html");
+        });
+
         $(document).ready(function () {
             $("#flip").click(function () {
                 $("#panel").slideToggle("slow");
@@ -32,10 +37,6 @@
                     $("#expande").addClass("fa-angle-double-down");
                 }
             });
-        });
-        $(function(){
-            $("#navigation").load("nav.html");
-            $("#slideshow").load("slide.html");
         });
     </script>
     <style>
@@ -159,11 +160,53 @@
         </div>
     </div>
     <!-------------------------------------------------------------------------------->
-    <!-------------------------------MAIN NAV---------------------------------->
-   <div id="navigation"></div>
-    <!--SLIDESHOW-->
+    <!-----------------------------------MAIN NAV------------------------------------->
+    <div id="navigation"></div>
+    <!-----------------------------------SLIDESHOW------------------------------------>
     <div id="slideshow"></div>
-
+    <!--------------------------------COLLUM OF THREEN-------------------------------->
+    <div id="collum-of-three">
+        <div class="col-xs-12 col-sm-4 col-lg-4 collum-of-three-pading parent">
+            <div class="icon-holder" style="float: left;">
+                <i class="fa fa-television fa-television-borderis parent-highlight" aria-hidden="true"></i>
+            </div>
+            <div class="collum-of-three-content">
+                <div class="collum-of-three-title text-left"><h3>SUPER CODING</h3></div>
+                <div class="collum-of-three-cont text-left">
+                    There are many variations of demo text passed sages of Lorem Ipsum available the majority
+                    There are many variations of demo.
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-4 collum-of-three-pading parent">
+            <div class="icon-holder" style="float: left;">
+                <i class="fas fa-mobile-alt fa-television-borderis parent-highlight" aria-hidden="true"></i>
+            </div>
+            <div class="collum-of-three-content">
+                <div class="collum-of-three-title text-left"><h3>SUPER CODING</h3></div>
+                <div class="collum-of-three-cont text-left">
+                    There are many variations of demo text passed sages of Lorem Ipsum available the majority
+                    There are many variations of demo.
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-4 collum-of-three-pading parent">
+            <div class="icon-holder" style="float: left;">
+                <i class="fas fa-puzzle-piece fa-television-borderis parent-highlight" aria-hidden="true"></i>
+            </div>
+            <div class="collum-of-three-content">
+                <div class="collum-of-three-title text-left"><h3>SUPER CODING</h3></div>
+                <div class="collum-of-three-cont text-left">
+                    There are many variations of demo text passed sages of Lorem Ipsum available the majority
+                    There are many variations of demo.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear: both">
+    a
+</div>
 </div>
 
 </body>
