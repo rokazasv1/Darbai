@@ -22,191 +22,36 @@
 
     <script>
         $(function () {
+            $("#topnav").load("topnav.html");
             $("#navigation").load("nav.html");
             $("#slideshow").load("slide.html");
-        });
-
-        $(document).ready(function () {
-            $("#flip").click(function () {
-                $("#panel").slideToggle("slow");
-
-                if ($('#expande').hasClass('fa-angle-double-down')) {
-                    $("#expande").removeClass("fa-angle-double-down");
-                    $("#expande").addClass("fa-angle-double-up");
-                } else {
-                    $("#expande").addClass("fa-angle-double-down");
-                }
-            });
+            $("#colllum-of-three").load("collums3.html");
         });
     </script>
-    <style>
-        .navbar {
-            border: none;
-            margin-top: 10px;
-        }
 
-        .navbar-header a {
-            margin-right: 50px;
-            font-weight: bold;
-        }
-
-        .navbar-default .navbar-nav > li > a {
-            color: #324545;
-        }
-
-        .navbar-default .navbar-nav > li > a:hover {
-            color: #1ccdca;
-        }
-
-        .main-nav {
-            margin-top: 20px;
-            width: 100%;
-            background: white;
-        }
-
-        .margin-zero {
-            margin: 0;
-        }
-
-        input {
-            outline: none;
-
-        }
-
-    </style>
 </head>
 <body>
 <div id="main_wrapper">
-    <!------------------------------------TOP NAVIGATION-------------------------------------------->
-    <div class="topnav" id="topnavid">
-        <div class="container">
-            <div class="row">
-                <div id="panel">
-                    <div class="col-sm-8 col-md-8 col-lg-8 top-nav-height">
-                        <div class="top-nav-left">
-                            <div class="dropdown dropdown1">
-                                <button class="btn-nav" type="button" data-toggle="dropdown">
-                                    <i class="fa fa-globe"></i>
-                                    <div class="top-nav-icon-padding">ENGLISH</div>
-                                </button>
-                                <ul class="dropdown-menu dropdown1-menu">
-                                    <li><a href="#" class="active">English</a></li>
-                                    <li><a href="#">RTL</a></li>
-                                </ul>
-                            </div>
-                            <button class="btn-nav" type="button">
-                                <i class="fa fa-key"></i>
-                                <div class="top-nav-icon-padding">LOGIN</div>
-                            </button>
-                            <button class="btn-nav" type="button">
-                                <i class="fa fa-phone"></i>
-                                <div class="top-nav-icon-padding">
-                                    <div class="topnav-text-hide">CALL US :</div>
-                                    (123) 456 - 7890
-                                </div>
-                            </button>
-                            <button class="btn-nav" type="button">
-                                <i class="fa fa-comment-o fa-flip-horizontal"></i>
-                                <div class="top-nav-icon-padding">
-                                    <div class="topnav-text-hide">SUPPORT :</div>
-                                    (123) 456 - 7890
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="top-socials">
-                            <a href="#">
-                                <span class="soc_name">Facebook</span>
-                                <span class="soc_icon_bg"></span>
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#">
-                                <span class="soc_name">Twitter</span>
-                                <span class="soc_icon_bg"></span>
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <span class="soc_name">Google+</span>
-                                <span class="soc_icon_bg"></span>
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <a href="#">
-                                <span class="soc_name">Skype</span>
-                                <span class="soc_icon_bg"></span>
-                                <i class="fa fa-skype"></i>
-                            </a>
-                            <a href="#">
-                                <span class="soc_name">picassa</span>
-                                <span class="soc_icon_bg"></span>
-                                <i class="fa fi-social-picasa"></i>
-                            </a>
-                            <a href="#">
-                                <span class="soc_name">Vimeo</span>
-                                <span class="soc_icon_bg"></span>
-                                <i class="fa fa-vimeo"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------------------------------------------------------------------------->
-    <!----------------------------BUTTON SLIDE DOWN---------------------------------->
-    <div id="flip">
-        <div class="top_expande top_expande-none">
-            <i id="expande" class="fa fa-angle-double-down" aria-hidden="true"></i>
-        </div>
-    </div>
-    <!-------------------------------------------------------------------------------->
+    <!----------------------------------TOP NAVIGATION-------------------------------->
+    <div id="topnav"></div>
     <!-----------------------------------MAIN NAV------------------------------------->
     <div id="navigation"></div>
     <!-----------------------------------SLIDESHOW------------------------------------>
     <div id="slideshow"></div>
-    <!--------------------------------COLLUM OF THREEN-------------------------------->
-    <div id="collum-of-three">
-        <div class="col-xs-12 col-sm-4 col-lg-4 collum-of-three-pading parent">
-            <div class="icon-holder" style="float: left;">
-                <i class="fa fa-television fa-television-borderis parent-highlight" aria-hidden="true"></i>
-            </div>
-            <div class="collum-of-three-content">
-                <div class="collum-of-three-title text-left"><h3>SUPER CODING</h3></div>
-                <div class="collum-of-three-cont text-left">
-                    There are many variations of demo text passed sages of Lorem Ipsum available the majority
-                    There are many variations of demo.
-                </div>
-            </div>
+    <!--------------------------------COLLUM OF THREE--------------------------------->
+    <div id="colllum-of-three"></div>
+    <!-------------------------------------SKILLS------------------------------------->
+    <div id="skills-page">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sk-left-side">
+            a
         </div>
-        <div class="col-xs-12 col-sm-4 col-lg-4 collum-of-three-pading parent">
-            <div class="icon-holder" style="float: left;">
-                <i class="fas fa-mobile-alt fa-television-borderis parent-highlight" aria-hidden="true"></i>
-            </div>
-            <div class="collum-of-three-content">
-                <div class="collum-of-three-title text-left"><h3>SUPER CODING</h3></div>
-                <div class="collum-of-three-cont text-left">
-                    There are many variations of demo text passed sages of Lorem Ipsum available the majority
-                    There are many variations of demo.
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-lg-4 collum-of-three-pading parent">
-            <div class="icon-holder" style="float: left;">
-                <i class="fas fa-puzzle-piece fa-television-borderis parent-highlight" aria-hidden="true"></i>
-            </div>
-            <div class="collum-of-three-content">
-                <div class="collum-of-three-title text-left"><h3>SUPER CODING</h3></div>
-                <div class="collum-of-three-cont text-left">
-                    There are many variations of demo text passed sages of Lorem Ipsum available the majority
-                    There are many variations of demo.
-                </div>
-            </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background: blue">
+a
         </div>
     </div>
-</div>
-<div style="clear: both">
-    a
-</div>
+
+
+
 </div>
 
 </body>

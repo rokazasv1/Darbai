@@ -431,10 +431,6 @@ input:-moz-placeholder {
     color: #ccc;
 }
 
-.dropdown-menu2 {
-
-}
-
 .dropdown-menu2 a:hover {
     color: white;
 }
@@ -457,9 +453,6 @@ input:-moz-placeholder {
 
 .dropdown-menu2 li:hover {
     background-color: black;
-
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
 
@@ -488,14 +481,12 @@ body {
     vertical-align: middle;
 }
 
-/* Slideshow container */
 #slideshow .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
 }
 
-/* Next & previous buttons */
 #slideshow .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -510,20 +501,16 @@ body {
     border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
 #slideshow .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 #slideshow .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* The dots/bullets/indicators */
 #slideshow .dot {
-    /* transition: all 0.4s ease; */
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -538,9 +525,7 @@ body {
     background-color: #717171;
 }
 
-/* Fading animation */
 #slideshow .fade {
-
     animation-name: fade;
     animation-duration: 1.5s;
     opacity: 1;
@@ -596,9 +581,13 @@ body {
 }
 
 /*----------------COLLUM OF THREE------------------------*/
+.collum-of-three-top-bot{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .collum-of-three-pading{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .collum-of-three-title h3{
     font-size: 17px;
@@ -613,6 +602,40 @@ body {
 .parent:hover .parent-highlight {
     background-color: #0CAEBF;
     color: white;
+}
+/*---------------------------SKILLS-------------------------------*/
+.sk-left-side{
+    background: #3C464D;
+}
+
+.count {
+    background: silver;
+    border: none;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    color: #324545;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+.count:before{
+    background: silver;
+    border: none;
+    content: '';
+    display: block;
+    height:10px;
+    right: 42px;
+    position: absolute;
+    top: 9px;
+    transform: rotate(45deg);
+    width: 11px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -671,4 +694,7 @@ body {
     .sticky {
         position: relative;
     }
+}
+.aaa{
+    transition: width .5s;
 }
