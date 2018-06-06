@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
 
-        * {box-sizing: border-box}
+        * {
+            box-sizing: border-box
+        }
+
+        .padding-skills-100 {
+            padding-right: 10px;
+        }
+
+        .padding-skills {
+            padding-right: 13px;
+        }
 
         .count {
             background: silver;
@@ -16,30 +26,28 @@
             position: relative;
             text-decoration: none;
             border-radius: 5px;
-            padding-left:10px;
-            padding-right:10px;
             color: #324545;
             font-style: italic;
-
+            width: 60px;
         }
 
-
-        .count:before{
+        .count:before {
             background: silver;
             border: none;
             content: '';
             display: block;
-            height:10px;
-            right: 42px;
+            height: 10px;
+            right: 54px;
+            top: 8px;
             position: absolute;
-            top: 9px;
             transform: rotate(45deg);
             width: 11px;
         }
+
         .skills-bars-cont {
             width: 100%;
             background-color: #ddd;
-
+            border-radius: 5px;
         }
 
         .skills {
@@ -48,95 +56,164 @@
             line-height: 40px;
             color: white;
         }
-.texts{
-    float: left;
-    padding-left: 10px;
-}
-        count{
+
+        .texts {
+            float: left;
+            padding-left: 10px;
+        }
+
+        .html, .css, .js, .php {
+            transition: width 2s;
+            border-radius: 5px;
+        }
+
+        .html {
+            width: 30%;
+            background-color: #4CAF50;
 
         }
-        .html {width:20%; background-color: #4CAF50; transition: width 2s;}
 
+        .css {
+            width: 30%;
+            background-color: #4CAF50;
 
+        }
 
-        .css {width:10%; background-color: #4CAF50; transition: width 2s;}
-        .js {width: 10%; background-color: #f44336;transition: width 2s;}
-        .php {width: 10%; background-color: #808080;transition: width 2s;}
-        .htmlhover {width: 80%; background-color: red;}
+        .js {
+            width: 30%;
+            background-color: #f44336;
+
+        }
+
+        .php {
+            width: 30%;
+            background-color: #808080;
+
+        }
+
+        .shiva {
+            margin-top: 10px;
+        }
+
+        .htmlhover, csshover, jshover, phphover {
+            border-radius: 5px;
+        }
+
+        .htmlhover {
+            width: 80%;
+            background-color: red;
+        }
+
+        .csshover {
+            width: 70%;
+            background-color: red;
+        }
+
+        .jshover {
+            width: 50%;
+            background-color: red;
+        }
+
+        .phphover {
+            width: 100%;
+            background-color: red;
+        }
+
+        .bakground {
+            background-size: cover;
+            background-image: url("img/bg_header4.jpg");
+            width: 100%;
+            overflow: hidden;
+
+        }
     </style>
 </head>
-<body>
+
 <script>
-    $(document).ready(function(){
-        $( ".sk" ).addClass( "htmlhover" );
+    $(document).ready(function () {
+        var h = $('#html');
+        var c = $('#css');
+        var j = $('#js');
+        var p = $('#php');
+
+
+        if (h.hasClass("html")) {
+            h.addClass("sk htmlhover");
+        }
+        if (c.hasClass("css")) {
+            c.addClass("sk");
+            c.addClass("csshover");
+        }
+        if (j.hasClass("js")) {
+            j.addClass("sk");
+            j.addClass("jshover");
+        }
+        if (p.hasClass("php")) {
+            p.addClass("sk");
+            p.addClass("phphover");
+        }
+
+        //count 0-100 numbers
         $('.count').each(function () {
-            $(this).prop('Counter',0).animate({
+            $(this).prop('Counter', 0).animate({
                 Counter: $(this).text()
             }, {
                 duration: 2000,
                 easing: 'swing',
                 step: function (now) {
-                    $(this).text(Math.ceil(now)+"%");
+                    $(this).text(Math.ceil(now) + "%");
                 }
             });
         });
     });
 </script>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
-<h1>My Skills</h1>
+<div class="bakground">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sk-left-side ">
+        <div class="row" style="padding: 40px 20px 40px 20px">
+            <h1>My Skills</h1>
 
-<p>HTML</p>
-<div class="skills-bars-cont">
-    <div class="skills html sk"><div class="texts">WEB DESIGN</div> <div id="shiva"><span class="count">80</span></div>
+            <div class="skills-bars-cont">
+                <div id="html" class="skills html">
+                    <div class="texts">WEB DESIGN</div>
+                    <div class="shiva">
+                        <span class="count padding-skills">80</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-bars-cont">
+                <div id="css" class="skills css ">
+                    <div class="texts">WEB DESIGN</div>
+                    <div class="shiva">
+                        <span class="count padding-skills">70</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-bars-cont">
+                <div id="js" class="skills js">
+                    <div class="texts">WEB DESIGN</div>
+                    <div class="shiva">
+                        <span class="count padding-skills">50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-bars-cont">
+                <div id="php" class="skills php">
+                    <div class="texts">WEB DESIGN</div>
+                    <div class="shiva">
+                        <span class="count padding-skills-100">100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sk-left-side">
+        <div class="row ">
+
+        </div>
     </div>
 </div>
-
-<p>CSS</p>
-<div class="skills-bars-cont">
-    <div class="skills css sk"><div class="texts">WEB DESIGN</div> <div id="shiva"><span class="count">80</span></div>
-    </div>
-</div>
-
-<p>JavaScript</p>
-<div class="skills-bars-cont">
-    <div class="skills js">65%</div>
-</div>
-
-<p>PHP</p>
-<div class="skills-bars-cont">
-    <div class="skills php">60%</div>
-</div>
-
 </body>
 </html>
