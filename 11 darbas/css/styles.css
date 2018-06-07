@@ -638,6 +638,106 @@ body {
     width: 11px;
 }
 
+
+/*---------------------WORK--------------------------*/
+.w_container-spacing{
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+.w_title h2 {
+    color: #324545;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    position: relative;
+    font-family: "Oswald", "Open Sans", sans-serif;
+    line-height: 40px;
+}
+.w_title .dot {
+    background: #fff;
+    border: 1px solid #1cc6df;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    margin-top: 16px;
+    border-radius: 100%;
+}
+.w-hr{
+    background: #1cc6df;
+    height: 1px;
+    position: relative;
+    margin-left: 10px;
+    width: 31%;
+    transition: width 1s;
+}
+.w-hr2{
+    background: rgba(0, 0, 0, 0.07);
+    height: 1px;
+    position: absolute;
+    top: 40px;
+    margin-left: 30%;
+    width: 30%;
+}
+.w_title:hover .w-hr{
+    position: relative;
+    width: 51%;
+}
+/*
+#1cc6df
+#E5E5E5
+*/
+.tab a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+.tab .nav-tabs{
+    position: relative;
+    border-bottom: none;
+}
+.tab .nav-tabs li{
+    margin: 0;
+    padding: 0;
+}
+.tab .nav-tabs li a{
+    background: #fff;
+    color: #888;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid #E5E5E5;
+    margin-right: 0;
+    transition: color 1s ease;
+}
+.tab .nav-tabs li a:first-child{
+
+}
+.tab .nav-tabs li a:hover {
+    color: black;
+
+}
+.tab .nav-tabs li.active .tab {
+
+    border-bottom: none;
+}
+.tab .nav-tabs li.active a{
+    border-bottom: none;
+
+}
+.tab .tab-content{
+    padding: 20px;
+    background: #fff;
+    font-size: 15px;
+    color: blue;
+    line-height: 26px;
+}
+.tab .tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+
 @media only screen and (max-width: 768px) {
     /*---------------------TOP NAV SLIDE--------------------------*/
     /* SLIDE DIV */
