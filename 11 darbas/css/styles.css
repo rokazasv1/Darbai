@@ -1032,8 +1032,8 @@ a[aria-expanded="true"] .fa-user, a[aria-expanded="true"] .fa-heart, a[aria-expa
     margin-top: 40px
 }
 .p-container{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 10px;
     font-size: 24px;
     font-weight: 300;
@@ -1046,11 +1046,94 @@ a[aria-expanded="true"] .fa-user, a[aria-expanded="true"] .fa-heart, a[aria-expa
     text-align: right;
 }
 
-.swiper-slide-left .cont-detail .person_name{
+.swiper-slide-right .photo {
+    float: right;
+    width: 30%;
+    margin-right: 10px;
+
+}
+.swiper-slide-right .photo img{
+    width: 100%;
+    border-radius: 100%;
+    padding: 4px;
+    border: 1px solid #D6D6D6;
+}
+
+.swiper-slide-right .cont-detail{
+    float: right;
+    font-size: 14px;
+    width: 68%;
+    text-align: left;
+}
+.swiper-slide-right .cont-detail .person_name a{
     color: #324545;
     display: block;
     font-size: 18px;
     line-height: normal;
+    text-decoration: none;
+}
+.swiper-slide-right .cont-detail .person_name a:hover{
+    color: #1cc6df;
+}
+
+.swiper-slide-right .cont-detail .person_jop{
+    color: #aaa;
+    display: block;
+    font-size: 14px;
+    margin: 3px 0 10px;
+    line-height: normal;
+}
+.swiper-slide-right .cont-detail .person_desc{
+    display: block;
+    line-height: 25px;
+    margin-bottom: 15px;
+    color: #999;
+}
+.swiper-slide-right .cont-detail .swiper-social_media a{
+    border: 1px solid #D6D6D6;
+    border-radius: 100%;
+    padding: 4px;
+    color: #666666;
+    height: 20px;
+    width: 20px;
+}
+.swiper-slide-right .cont-detail .swiper-social_media a{
+    border: 1px solid #D6D6D6;
+    border-radius: 100%;
+    padding: 10px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all .5s ease;
+}
+.swiper-slide-right .cont-detail .swiper-social_media a:hover{
+    border: 1px solid #1cc6df;
+    border-radius: 100%;
+    padding: 10px;
+    color: #1cc6df;
+    text-decoration: none;
+    margin-left: 15px;
+
+}
+.swiper-slide-right .cont-detail .swiper-social_media a i{
+    height: 20px;
+    width: 20px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+
+.swiper-slide-left .cont-detail .person_name a{
+    color: #324545;
+    display: block;
+    font-size: 18px;
+    line-height: normal;
+    text-decoration: none;
+}
+.swiper-slide-left .cont-detail .person_name a:hover{
+    color: #1cc6df;
 }
 .swiper-slide-left .cont-detail .person_jop{
     color: #aaa;
@@ -1072,7 +1155,9 @@ a[aria-expanded="true"] .fa-user, a[aria-expanded="true"] .fa-heart, a[aria-expa
     color: #666666;
     height: 20px;
     width: 20px;
+
 }
+
 .swiper-slide-left .cont-detail .swiper-social_media a{
     border: 1px solid #D6D6D6;
     border-radius: 100%;
