@@ -763,6 +763,7 @@ body {
     position: relative;
     font-family: "Oswald", "Open Sans", sans-serif;
     line-height: 40px;
+    margin-top: 40px;
 }
 .w_title .dot {
     background: #fff;
@@ -785,7 +786,7 @@ body {
     background: rgba(0, 0, 0, 0.07);
     height: 1px;
     position: absolute;
-    top: 40px;
+    top: 80px;
     margin-left: 30%;
     width: 30%;
 }
@@ -842,6 +843,7 @@ body {
     font-size: 15px;
     color: #666666;
     line-height: 26px;
+    overflow: hidden;
 }
 .tab .tab-content h3{
     font-size: 24px;
@@ -849,12 +851,15 @@ body {
 }
 .list3{
     padding: 0;
+    float: left;
+
 }
 .list3 li{
     display: block;
-    margin: 0;
+
     padding: 0;
     list-style: none;
+    margin-right: 10px;
 }
 .list3 li:after {
     background: #e74c3c;
@@ -878,12 +883,14 @@ body {
 }
 
 /*IMAGE*/
+
 .hotspot-wrapper {
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
-.hotspot-wrapper #icons{
+.hotspot-wrapper #icon1,.hotspot-wrapper #icon2, .hotspot-wrapper #icon3{
     display:none;
     background-color: #1cc6df;
     color: #fff;
@@ -892,26 +899,30 @@ body {
     width: 60px;
     position: absolute;
     border-radius: 100%;
-    top: 45%;
-    left: 45%;
+    top: 40%;
+    left: 40%;
     animation-name: fade;
     animation-duration: 1.5s;
     opacity: 1;
     transform: rotate(30deg);
+    overflow: hidden;
 
 }
-.hotspot-wrapper #icons i{
+.hotspot-wrapper #icon1 i,.hotspot-wrapper #icon2 i, .hotspot-wrapper #icon3 i{
     margin-left: 20px;
     margin-top: 10px;
 
 }
-#icons:hover {
+#icon1:hover,#icon2:hover,#icon3:hover  {
     transform: rotate(360deg);
 }
+.hotspot-wrapper:hover{
 
-.hotspot-wrapper:hover #icons{
+}
+.hotspot-wrapper:hover #icon1,.hotspot-wrapper:hover #icon2,.hotspot-wrapper:hover #icon3{
     display: block;
     transform: rotate(360deg);
+
 }
 .hotspot-wrapper img {
     max-width:100% !important;
@@ -927,18 +938,86 @@ body {
 /*ACORDION*/
 .panel-heading{
     color: #666;
-
+    font-size: 15px;
 }
 .collapsed{
     color: #fff;
     background: #fff;
     border-color: #1ccdca;
 }
-.collapse.in{
-
-}
 .panel a:hover{
     text-decoration: none;
+}
+.panel .fa-heart{
+    font-size: 19px;
+    color: #666666;
+    margin-top: 0;
+}
+a[aria-expanded="true"] .panel-heading {
+    background-color: #42DCA3;
+    color: white;
+}
+a[aria-expanded="true"] .fa-user, a[aria-expanded="true"] .fa-heart, a[aria-expanded="true"] .fa-check{
+    color: white;
+    font-size: 19px;
+}
+
+.collapse.in #accordion .panel-heading{
+    background-color: #42DCA3;
+}
+.panel-body p{
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+/*--------------------------COUNTDOWN------------------------------*/
+/*ICON*/
+.user-size, .fa-heart, .fa-code, .fa-paper-plane{
+    font-size: 42px;
+    color: #1cc6df;
+    margin-top: 40px;
+}
+/*--------------------------*/
+.countdown-conteiner{
+    background: white;
+    border: 1px solid #e5e5e5;
+}
+.countdown-numbers{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: "Oswald", "Open Sans", sans-serif;
+}
+.countdown-text{
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+#team-cont-icon {
+    position: absolute;
+}
+.team-title-cont{
+    position: relative;
+}
+#team-cont-icon .fa-user{
+    font-size: 18px;
+    background: transparent;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    color: red;
+}
+.hr3{
+    text-align: center;
+    background: #0CAEBF;
+    height: 1px;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 40px;
+    width: 60%;
 }
 @media only screen and (max-width: 768px) {
     /*--------------------------TOP NAV---------------------------*/
