@@ -16,7 +16,7 @@
           rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
           rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -79,14 +79,102 @@
     <div id="team">
         <div class="container">
             <div class="team-title-cont">
-                <div class="team-title text-center" style="color: #324545;font-size: 30px;font-weight: 400;letter-spacing: 1px;
-                margin-bottom: 40px;padding-bottom: 20px;position: relative;line-height: 40px; margin-top: 40px">
-                    <h2>
-                        <span class="line">
-                            <i class="ico-user5"></i>
-                        </span>
-                        Meet Our Team
-                    </h2>
+                <div class="team-title text-center">
+                    <h2>Meet Our Team</h2>
+                    <div class="team-icon-holder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="p-container">
+                            We believe in a diverse range of personel to bring creative skills, thoughts, and ideas to
+                            the table.
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="swiper-slide-left">
+                                        <div class="cont-detail">
+                                            <div class="person_name">
+                                                John Boris
+                                            </div>
+                                            <div class="person_jop">
+                                                CCO & Product Manager
+                                            </div>
+                                            <div class="person_desc">
+                                                Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                                typesetting industry.
+                                            </div>
+                                            <div class="swiper-social_media">
+                                                <a href="#" target="_blank" class="twitter">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="#" target="_blank" class="facebook">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                                <a href="#" target="_blank" class="googleplus">
+                                                    <i class="fa fa-google-plus"></i>
+                                                </a>
+                                                <a href="#" target="_blank" class="linkedin">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo" style="">
+                                            <img src="img/team1-large.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="swiper-slide-right">
+                                        <div class="person_name">John Boris</div>
+                                        <div class="person_jop">CCO &amp; Product Manager</div>
+                                        <div class="person_desc">Lorem Ipsum is simply dummy to text of the printing and
+                                            Lorem off typesetting industry.
+                                        </div>
+                                        <div class="swiper-social_media">
+                                            <a href="#" target="_blank" class="twitter">
+                                                <i class="ico-twitter4"></i>
+                                            </a>
+                                            <a href="#" target="_blank" class="facebook">
+                                                <i class="ico-facebook4"></i>
+                                            </a>
+                                            <a href="#" target="_blank" class="googleplus">
+                                                <i class="ico-google-plus"></i>
+                                            </a>
+                                            <a href="#" target="_blank" class="linkedin">
+                                                <i class="ico-linkedin3"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                    <script src="js/swiper.min.js"></script>
+                    <script>
+                        var swiper = new Swiper('.swiper-container', {
+                            spaceBetween: 30,
+                            centeredSlides: true,
+                            autoplay: {
+                                delay: 11111500,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
+                    </script>
                 </div>
             </div>
         </div>
