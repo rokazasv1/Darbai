@@ -955,6 +955,11 @@ body {
     color: #666666;
     margin-top: 0;
 }
+.panel .fa-user{
+    font-size: 19px;
+    color: #666666;
+    margin-top: 0;
+}
 a[aria-expanded="true"] .panel-heading {
     background-color: #42DCA3;
     color: white;
@@ -1048,16 +1053,40 @@ a[aria-expanded="true"] .fa-user, a[aria-expanded="true"] .fa-heart, a[aria-expa
 
 .swiper-slide-right .photo {
     float: right;
-    width: 30%;
+
     margin-right: 10px;
+    background: url("../img/team2-large.jpg");
+    background-size: cover;
+    width: 153px;
+    height: 153px;
+    border-radius: 100%;
+    border: 1px solid #D6D6D6;
+    transition: all .5s ease;
 
 }
-.swiper-slide-right .photo img{
-    width: 100%;
-    border-radius: 100%;
-    padding: 4px;
-    border: 1px solid #D6D6D6;
+.swiper-slide-right.photo {
+    position: relative;
+
 }
+
+.swiper-slide-right .photo i {
+    position: relative;
+    display: none;
+    margin-top: 40px;
+    font-size: 64px;
+}
+
+.swiper-slide-right .photo:hover{
+background: #0CAEBF;
+}
+.swiper-slide-right .photo:hover i{
+    display: block;
+    color: white;
+
+}
+
+
+
 
 .swiper-slide-right .cont-detail{
     float: right;

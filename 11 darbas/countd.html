@@ -1,3 +1,17 @@
+<script>
+
+    $('.countdown-numbers').each(function () {
+        var $this = $(this);
+        jQuery({Counter: 0}).animate({Counter: $this.text()}, {
+            duration: 8000,
+            easing: 'swing',
+            step: function () {
+                $this.text(Math.ceil(this.Counter));
+            }
+        });
+
+    });
+</script>
 <div class="container text-center">
     <div class="col-xs-12 col-sm-3">
         <i class="far fa-user user-size"></i>
@@ -22,5 +36,5 @@
         <div class="countdown-numbers">384</div>
         <div class="countdown-text">Projects</div>
     </div>
-
+    <p></p>
 </div>
