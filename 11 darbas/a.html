@@ -1,158 +1,27 @@
-<!DOCTYPE html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style>
-
-        * {
-            box-sizing: border-box
-        }
-
-        .padding-skills-100 {
-            padding-right: 10px;
-        }
-
-        .padding-skills {
-            padding-right: 13px;
-        }
-
-        .count {
-            background: silver;
-            border: none;
-            display: inline-block;
-            height: 28px;
-            line-height: 28px;
-            position: relative;
-            text-decoration: none;
-            border-radius: 5px;
-            color: #324545;
-            font-style: italic;
-            width: 60px;
-        }
-
-        .count:before {
-            background: silver;
-            border: none;
-            content: '';
-            display: block;
-            height: 10px;
-            right: 54px;
-            top: 8px;
-            position: absolute;
-            transform: rotate(45deg);
-            width: 11px;
-        }
-
-        .skills-bars-cont {
-            width: 100%;
-            background-color: #ddd;
-            border-radius: 5px;
-        }
-
-        .skills {
-            text-align: right;
-            padding-right: 20px;
-            line-height: 40px;
-            color: white;
-        }
-
-        .texts {
-            float: left;
-            padding-left: 10px;
-        }
-
-        .html, .css, .js, .php {
-            transition: width 2s;
-            border-radius: 5px;
-        }
-
-        .html {
-            width: 30%;
-            background-color: #4CAF50;
-
-        }
-
-        .css {
-            width: 30%;
-            background-color: #4CAF50;
-
-        }
-
-        .js {
-            width: 30%;
-            background-color: #f44336;
-
-        }
-
-        .php {
-            width: 30%;
-            background-color: #808080;
-
-        }
-
-        .shiva {
-            margin-top: 10px;
-        }
-
-        .htmlhover, csshover, jshover, phphover {
-            border-radius: 5px;
-        }
-
-        .htmlhover {
-            width: 80%;
-            background-color: red;
-        }
-
-        .csshover {
-            width: 70%;
-            background-color: red;
-        }
-
-        .jshover {
-            width: 50%;
-            background-color: red;
-        }
-
-        .phphover {
-            width: 100%;
-            background-color: red;
-        }
-
-        .bakground {
-            background-size: cover;
-            background-image: url("img/bg_header4.jpg");
-            width: 100%;
-            overflow: hidden;
-
-        }
-    </style>
-</head>
-
 <script>
     $(document).ready(function () {
         var h = $('#html');
         var c = $('#css');
-        var j = $('#js');
+        var js = $('#js');
         var p = $('#php');
+        var j = $('#jomla');
 
 
         if (h.hasClass("html")) {
             h.addClass("sk htmlhover");
         }
         if (c.hasClass("css")) {
-            c.addClass("sk");
-            c.addClass("csshover");
+            c.addClass("sk csshover");
         }
-        if (j.hasClass("js")) {
-            j.addClass("sk");
-            j.addClass("jshover");
+        if (js.hasClass("js")) {
+            js.addClass("sk jshover");
         }
         if (p.hasClass("php")) {
-            p.addClass("sk");
-            p.addClass("phphover");
+            p.addClass("sk phphover");
         }
-
+        if (j.hasClass("jomla")) {
+            j.addClass("sk jomlaover");
+        }
         //count 0-100 numbers
         $('.count').each(function () {
             $(this).prop('Counter', 0).animate({
@@ -169,9 +38,13 @@
 </script>
 <div class="bakground">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sk-left-side ">
-        <div class="row" style="padding: 40px 20px 40px 20px">
-            <h1>My Skills</h1>
-
+        <div class="skills-row">
+            <h2>OUR SKILLS</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text
+                Ipsum has been the industry standar dummyy text ever since the when an iunesi known
+                printer of took a galley of type.
+            </p>
             <div class="skills-bars-cont">
                 <div id="html" class="skills html">
                     <div class="texts">WEB DESIGN</div>
@@ -183,7 +56,16 @@
 
             <div class="skills-bars-cont">
                 <div id="css" class="skills css ">
-                    <div class="texts">WEB DESIGN</div>
+                    <div class="texts">PROGRAMMING</div>
+                    <div class="shiva">
+                        <span class="count padding-skills">60</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-bars-cont">
+                <div id="js" class="skills js">
+                    <div class="texts">HTML/CSS</div>
                     <div class="shiva">
                         <span class="count padding-skills">70</span>
                     </div>
@@ -191,29 +73,30 @@
             </div>
 
             <div class="skills-bars-cont">
-                <div id="js" class="skills js">
-                    <div class="texts">WEB DESIGN</div>
-                    <div class="shiva">
-                        <span class="count padding-skills">50</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-bars-cont">
                 <div id="php" class="skills php">
-                    <div class="texts">WEB DESIGN</div>
+                    <div class="texts">WORDPRESS</div>
                     <div class="shiva">
                         <span class="count padding-skills-100">100</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sk-left-side">
-        <div class="row ">
 
+
+            <div class="skills-bars-cont">
+                <div id="jomla" class="skills jomla">
+                    <div class="texts">JOOMLA</div>
+                    <div class="shiva">
+                        <span class="count padding-skills">40</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-</body>
-</html>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sk-left-side">
+    <div class="row ">
+
+    </div>
+</div>
+</div>
